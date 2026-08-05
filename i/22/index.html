@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Yoshua Bengio：我们还没准备好迎接超人类 AI，却仍在建造它 - AI 访谈库</title>
+  <meta name="description" content="Bengio 讲述自己的“觉醒”：为何认为不受约束的 AI 可能毁灭人类，以及他转向 AI 安全研究的心路历程。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/22/" />
+  <meta property="og:title" content="Yoshua Bengio：我们还没准备好迎接超人类 AI，却仍在建造它" />
+  <meta property="og:description" content="Bengio 讲述自己的“觉醒”：为何认为不受约束的 AI 可能毁灭人类，以及他转向 AI 安全研究的心路历程。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/og-22.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">Yoshua Bengio：我们还没准备好迎接超人类 AI，却仍在建造它</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Yoshua Bengio · 深度学习先驱、图灵奖得主、Mila 创始人</div>
+      <h1 class="r-title">Yoshua Bengio：我们还没准备好迎接超人类 AI，却仍在建造它</h1>
+      <p class="r-title-en">Yoshua Bengio Doesn&#39;t Think We&#39;re Ready for Superhuman AI. We&#39;re Building it Anyway.</p>
+      <div class="r-meta">2024-09-24 · Machines Like Us (The Globe and Mail) · 音频 · <a class="r-src" href="https://podcasts.apple.com/gb/podcast/yoshua-bengio-doesnt-think-were-ready-for-superhuman/id1484910273?i=1000670520101" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">Bengio 讲述自己的“觉醒”：为何认为不受约束的 AI 可能毁灭人类，以及他转向 AI 安全研究的心路历程。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/og-22.png" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><p class="r-empty">这条还没有文字稿——来自纯音频平台，待「音频下载 + 转文字」阶段处理。可点标题下方的「原文」链接收听。</p></div>
+    <footer class="r-foot"><button class="tag" data-tag="AI 安全"># AI 安全</button><button class="tag" data-tag="生存风险"># 生存风险</button><button class="tag" data-tag="个人心路"># 个人心路</button><button class="tag" data-tag="超级智能"># 超级智能</button><button class="tag" data-tag="深度学习先驱"># 深度学习先驱</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

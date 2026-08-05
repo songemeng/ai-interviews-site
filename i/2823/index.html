@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>对话 Google DeepMind CTO Koray Kavukcuoglu：新任 Google 首席 AI 架构师、Gemini 3 与 AGI 进展 - AI 访谈库</title>
+  <meta name="description" content="FT 文字专访：谈出任 Google 首席 AI 架构师的新角色、Gemini 3 的成功与通往 AGI 的进度。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/2823/" />
+  <meta property="og:title" content="对话 Google DeepMind CTO Koray Kavukcuoglu：新任 Google 首席 AI 架构师、Gemini 3 与 AGI 进展" />
+  <meta property="og:description" content="FT 文字专访：谈出任 Google 首席 AI 架构师的新角色、Gemini 3 的成功与通往 AGI 的进度。" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">对话 Google DeepMind CTO Koray Kavukcuoglu：新任 Google 首席 AI 架构师、Gemini 3 与 AGI 进展</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Koray Kavukcuoglu · Google DeepMind</div>
+      <h1 class="r-title">对话 Google DeepMind CTO Koray Kavukcuoglu：新任 Google 首席 AI 架构师、Gemini 3 与 AGI 进展</h1>
+      <p class="r-title-en">An interview with Google DeepMind CTO Koray Kavukcuoglu on his new role as Google&#39;s chief AI architect, Gemini 3, progress toward AGI</p>
+      <div class="r-meta">2026-01-07 · Financial Times · 约 11 分钟读完 · <a class="r-src" href="https://www.ft.com/content/3b477836-8a87-4ce3-bea1-719f28952a9a" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">FT 文字专访：谈出任 Google 首席 AI 架构师的新角色、Gemini 3 的成功与通往 AGI 的进度。</div>
+    </header>
+    
+    <div class="r-spk-bar"><span class="r-spk-label">只看</span><button class="spk-chip on" data-spkf="MH">MH</button><button class="spk-chip on" data-spkf="KK">KK</button></div>
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">Google 的 Koray Kavukcuoglu：将抽象的 AI 思考转化为用户友好的产品</p><p data-pi="1">只需注册订阅 Technology sector myFT Digest——直接送达您的收件箱。</p><p data-pi="2">Koray Kavukcuoglu 是 DeepMind 的首席技术官，也是 Google 的首席 AI 架构师。</p><p data-pi="3">他一直在领导 [Gemini 3](https://blog.google/products/gemini/gemini-3/) 的开发工作，这是该科技巨头最新的 AI 大语言模型（LLM），已于 11 月发布。该模型的一项新功能是可以根据用户的搜索查询创建交互式应用和小部件。</p><p data-pi="4">这款新 LLM 的能力给竞争对手留下了深刻印象，促使 OpenAI 首席执行官 Sam Altman [宣布](https://www.ft.com/content/7a42396f-487a-47b0-8121-8d8f2112fa53)进入“红色警戒”状态，急于改进该公司广受欢迎的聊天机器人 ChatGPT，以追赶 Google。</p><p data-pi="5">Google 的优势在于拥有完整的 AI 技术栈，这意味着它具备硬件、数据中心、芯片以及支撑前沿 AI 研究的所有其他要素。随后，它可以将任何新产品直接推向其庞大的客户群。</p><p data-pi="6">在与英国《金融时报》AI 记者 Melissa Heikkilä 的对话中，Kavukcuoglu 解释了 Gemini 3 的独到之处，以及它将如何帮助 Google 在争夺 AI 霸主地位的竞赛中占据有利位置。</p><p data-pi="7">Melissa Heikkilä：你自 2024 年初起担任 DeepMind 的首席技术官，去年夏天，你又承担了 Google 首席 AI 架构师这一新角色。首席 AI 架构师是做什么的？</p><p data-pi="8">Koray Kavukcuoglu：我们正在构建一项非常基础的技术。我首要的关注点是确保我们的 AI 开发与产品之间实现紧密连接。</p><p data-pi="9">我们希望让 Google 内部的所有产品、所有产品领域都能使用我们正在打造的最先进的 AI 技术。因此，在 Google DeepMind，我们正在构建这项前沿技术，[我们的]目标是打造 AGI [通用人工智能——即超越人类能力和智能的机器]。重要的是，我们要在与用户的连接中推进这项工作，而这只能通过我们的产品来实现。为了实现这一点，我们的产品需要接触到我们的前沿技术。</p></section><section class="chunk chunk-eager"><p data-pi="10">这是一项全新的技术，需要全新的基础设施才能实现规模化。这些就是我关注的重点领域：推动这一转型、建设相应的基础设施、与各产品团队协作，使它们能够使用最好的技术，并以最佳方式与用户建立连接。</p><p data-pi="11" data-spk="MH"><span class="spk">MH</span>帮我梳理一下 Gemini 3 的背景。对于普通人来说，我们已经见过很多新的 AI 模型，它们看起来都只是渐进式的发展。许多非 AI 专业人士可能听说 OpenAI 的 GPT-5 有点令人失望。那么，为什么 Gemini 3 是一件大事？为什么它对 Google 意义重大？它又如何定位你们在 AI 竞赛中的位置？</p><p data-pi="12" data-spk="KK"><span class="spk">KK</span>从我们角度来看，这很重要，因为我们觉得在多模态理解方面又迈出了一大步，而这对用户来说非常关键。我们的内容不仅仅只有文本，内容以各种形式存在。这就是为什么 [NotebookLM](https://notebooklm.google.com/) [Google 的 AI 研究与笔记助手] 非常受欢迎，[因为]人们喜欢……上传各种文件，然后……针对这些文件提问。</p><p data-pi="13" data-spk="KK">因此，随着我们提升这种能力……人们的视频、图像、PDF 等等，能够对它们实现真正出色的理解，这是一个巨大的进步。而且我想我们的用户也会从他们获得的答案类型和信息类型中，注意到这一重大进步。</p><p data-pi="14" data-spk="KK">第二点是编程。但编程不仅仅是软件工程师的事。编程也越来越关乎学习。</p><p data-pi="15" data-spk="KK">[借助 Gemini 的生成式用户界面]，当人们提出问题时，他们能得到直观得多的答案，这些答案能够即时教学，同时附带模拟和小部件，用户可以从中学习并进行实验。</p><p data-pi="16" data-spk="KK">我认为，能够将这种概念性和抽象性的进步转化为对用户来说真正具体且有影响力的界面和交互，才是将产生差异的地方。能够与产品一起做到这一点，是我们独有的差异化优势。我们不仅仅是在发布模型。我们是与产品一起发布这些经过深思熟虑的用户界面和交互，并且基于我们拥有的完整技术栈来构建。</p><p data-pi="17" data-spk="KK">在工程方面，通过 [Antigravity](https://antigravity.google/) [Google 的 AI 驱动集成开发环境]，我们正在发布一种全新的代码构建方式。这种 agent-first [软件可以在没有人工输入的情况下自主行动] 的代码开发环境是一个重大进步。而这是因为模型具备了这种能力，它们实际上能够在如此高层次的抽象层面上执行，并作为 agent 运行。</p><p data-pi="18" data-spk="MH"><span class="spk">MH</span>你能给我介绍一下促成这一模型的研究和技术突破吗？</p><p data-pi="19" data-spk="KK"><span class="spk">KK</span>模型开发涉及多个技术投入领域。首先从预训练开始。预训练[即模型在数据集上接受训练]主要关乎架构改进，这样你就能拥有更好、更高效的架构，并且能够更好地理解你用来训练的数据。我们在这方面显著提升了性能。我们对自己在这方面的能力非常满意。</p></section><section class="chunk"><p data-pi="20" data-spk="KK">预训练为你提供了潜力，因为你拥有的是一个理解数据的模型，它不仅[不仅]捕捉数据中的信息，还捕捉其潜力。它在产品中的体现方式是通过后训练，模型在此阶段学习如何针对该产品与用户互动。</p><p data-pi="21" data-spk="KK">在后训练方面，我们取得了多项进展，从而实现了高级别的 agentic 行为，以及编程和理解能力。模型知道，对于你提出的某个问题，它可能会展示一个表格，里面包含它通过网络搜索找到的图片。</p><p data-pi="22" data-spk="KK">但对于你的另一个不同查询，它会决定编写一个小程序来向你展示一个模拟、一个小部件。所以，模型会自主做出这些决定。而这全都是因为它……具备编程和 agentic 能力。</p><p data-pi="23" data-spk="KK">预训练方面、后训练方面、整个公司范围内的所有这些因素汇聚在一起，才成就了这一切。</p><p data-pi="24" data-spk="MH"><span class="spk">MH</span>这所需的计算力一定高得惊人。你们如何从中盈利？</p><p data-pi="25" data-spk="KK"><span class="spk">KK</span>最重要的是，第一，我们的全栈方法。我认为我们在这方面拥有独特的路径。第二，我们与产品团队协同推进这项工作。当我们进行所有研究、开发前沿技术，以及向用户发布这些模型时，这一切都建立在这样一个事实之上：我们是通过产品来做的，数十亿人使用这些产品，我们能了解需求在哪里、人们希望如何使用这些技术。</p><p data-pi="26" data-spk="KK">我认为这正是关键所在：我们所做的每一项前沿技术开发，都受到从用户那里获得的信号指引。这种植根于现实的特性对我们来说才是重要且独特的地方。</p><p data-pi="27" data-spk="MH"><span class="spk">MH</span>Google 曾表示，Gemini 3 是迈向真正通用型 agent 以及描绘 agent 形态愿景的第一步。这是否就是我们想象中 AGI 该有的样子和体验？</p><p data-pi="28" data-spk="KK"><span class="spk">KK</span>说实话，我不会这么说。我们所做的一切都是朝着那个方向努力的。显然，我们正在尝试构建 AGI，这是我们的使命，也是我们的目标。但我认为有一点对我来说非常非常重要，那就是我们并没有……构建 AGI 的现成配方（因为这仍然属于研究）。正因如此，打造正确的产品、选择正确的产品，以及理解用户信号，才是指引我们技术发展的方向。</p><p data-pi="29" data-spk="KK">AGI 必须是对用户有用的东西，它也必须是这样。这正是我们努力构建的。而要做到这一点，唯一的方式就是以负责任的方式从用户那里获取这些信号。这就是为什么，当我们说尝试从一开始就考虑到安全性和保障性来设计模型时，我们确实这样做了，而且我们在产品层面也这样做。</p></section><section class="chunk"><p data-pi="30" data-spk="KK">而 Google 在触达数十亿用户方面有着悠久而成功的历史。我们也正是依靠这一点来告诉我们用户的需求在哪里，技术真正需要在哪些方面为用户解决问题。这就是我们试图构建的通往 AGI 的道路。</p><p data-pi="31" data-spk="MH"><span class="spk">MH</span>您还提到 Gemini 3 避免了陈词滥调和奉承，这是生成式 AI 模型的常见特点。这是如何做到的？你们做了什么？</p><p data-pi="32" data-spk="KK"><span class="spk">KK</span>模型的人格很重要。关于人们希望模型给人什么样的感觉，有很多讨论。我认为我们的一个优势在于，我们既与外部合作伙伴和公司合作，也有内部产品。每个产品也都有自己的一点内在人格。我们所做的是大量研究，探讨如何量化模型的人格。Sycophancy 是我们考察的维度之一。我不认为有人能声称我们在这里有一个完美的解决方案。</p><p data-pi="33" data-spk="KK">但我们觉得，在理解如何创建一个可引导、且在广泛领域都有用的模型方面，我们已经迈出了步伐。很重要的一点是，模型应该向用户提供他们想要的信息，而不应有过多的信息堆砌，也不应有过多的奉承。</p><p data-pi="34" data-spk="KK">在某些情况下，它应该被使用；但在很多情况下，我们知道这并不必要。</p><p data-pi="35" data-spk="KK">我们未必为 Gemini 编码了特定的人格。当然，post-training 完全关乎用户体验。但对我们来说，更重要的是能力、真实性，以及随之而来的平实语言。</p><p data-pi="36" data-spk="MH"><span class="spk">MH</span>更广泛地谈谈 AI 研究和这个领域，作为一名科学家，目前 AI 领域中什么让您感到兴奋？</p><p data-pi="37" data-spk="KK"><span class="spk">KK</span>现在，一切发展得很快。之所以快，是因为我们看到了这些模型在现实世界用例中的影响。人们正在将这些模型用于工作、学习和教育，而且它们正在产生实际影响。</p><p data-pi="38" data-spk="KK">对我来说，最令人兴奋的事情正在发生，那就是我们学习如何从这些模型中打造出更好的 agents。因为当我们提到 agents 时，很多人只想到编程 agent，但这只是一方面。它关乎这些 agent 如何被使用，以及你在生活的哪些方面依赖它们。</p><p data-pi="39" data-spk="KK">学习是我非常非常兴奋的领域。因为我们看到，突然间你可以与现有内容进行丰富得多的互动。因此，我们可以以丰富得多的方式将这些内容与用户连接起来。而随着我们在 agents 方面越做越好，我认为我们会看到更多这样的应用。</p></section><section class="chunk"><p data-pi="40" data-spk="KK">我们花了六个月的时间来开发 Gemini 3 模型，它在 Gemini 2.5 的基础上构建，整合了我们从用户那里获得的所有信号和经验，然后才打造出这一个。我们将从各种不同类型的社区获得反馈，从消费者到……开发者，再到企业。我们的重点将真正放在理解这些反馈上。</p><p data-pi="41" data-spk="KK">不可避免地，总会有差距，然后我们要去弥合这些差距。通过这个过程，我们也将理解人们试图解决的重要问题是什么。因为一旦你的模型达到了一定的质量或准确度，人们就会以一种更难、更具创造性的方式去推动它。因此，下一步就是向这种创造力学习。</p></section></div>
+    </article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

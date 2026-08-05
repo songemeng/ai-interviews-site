@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mira Murati：AI 的下一章｜Thinking Machines - AI 访谈库</title>
+  <meta name="description" content="Murati 约 18 个月来首次重要公开访谈：预告全新的 interaction models 交互式 AI 界面，回应核心研究员离职与天价薪酬争夺战。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/47/" />
+  <meta property="og:title" content="Mira Murati：AI 的下一章｜Thinking Machines" />
+  <meta property="og:description" content="Murati 约 18 个月来首次重要公开访谈：预告全新的 interaction models 交互式 AI 界面，回应核心研究员离职与天价薪酬争夺战。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/yt-A_jIpryR5js.jpg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">Mira Murati：AI 的下一章｜Thinking Machines</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Mira Murati · Thinking Machines Lab 创始人兼 CEO（前 OpenAI CTO）</div>
+      <h1 class="r-title">Mira Murati：AI 的下一章｜Thinking Machines</h1>
+      <p class="r-title-en">Thinking Machines&#39; Murati on AI&#39;s Next Chapter</p>
+      <div class="r-meta">2026-06-04 · Bloomberg · 约 15 分钟读完 · <a class="r-src" href="https://www.youtube.com/watch?v=A_jIpryR5js" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">Murati 约 18 个月来首次重要公开访谈：预告全新的 interaction models 交互式 AI 界面，回应核心研究员离职与天价薪酬争夺战。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/yt-A_jIpryR5js.jpg" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">让我们从当下说起，谈谈你正在做的工作。你在 Thinking Machines 构建交互模型。你说这些模型让人类保持在回路中。这具体是什么意思？</p><p data-pi="1">过去一年半里，我们一直在为建立一家前沿 AI 实验室打基础。基于我们的特定研究重点，交互模型是我们向人机协作集中下注的首次亮相。我们创立 Thinking Machines 的原因，正是想建立一家真正专注于人机协作的前沿 AI 实验室。这包含很多层面，也需要具体的研究赌注。但我们希望通过交互模型这第一项赌注来展示我们的工作。交互模型是一种新型模型。如果你看看今天我们使用的模型类型，它们非常回合制。</p><p data-pi="2">你说，它说，然后在你给出提示后，它就去思考。而在思考过程中，它几乎像是又聋又瞎，无法感知周围发生的其他任何事情。然后轮到你说，而在你说话时，它也无法感知你说话的方式。这不是实时发生的。相比之下，人与人之间的互动非常丰富。当我们沉默、思考、互相打断时，互动中都蕴含着大量信息。因此，交互模型能够捕捉所有这些细微差别。它们不是回合制的，更像是基于时间的交互，持续接收音频、文本、视频，并持续输出。我们将这些切分为 20 毫秒的块，这让你能够真正捕捉到打断、同时说话等现象，并在人与机器之间创造出丰富的高带宽交互。</p><p data-pi="3">我们认为，随着 AI 不断进步，这对赋予能动性、让人更深入地参与回路至关重要。</p><p data-pi="4">你基本上是在从零开始建立一家 AGI 实验室。OpenAI、Anthropic、Google、Meta 都已大幅领先。它们都在竞相构建更智能的模型。你下注的是什么——而它们没有？你认为它们低估了什么？</p><p data-pi="5">首先，我认为推进 AI 前沿是极其正和的。我认为有足够的空间容纳多种不同的视角和技术发展路径，多元化是好事。拥有多元化的视角、技术构建方式和不同的产品，对世界来说是伟大的。但这非常难做。所以我认为这就是为什么实际上并没有多少玩家。准入门槛极高。但就创造差异化而言，我确实认为还有大量空间。我一直对推进 AI 系统前沿充满热情，我认为这给文明带来的变革潜力巨大。但这不是命中注定的结果。我们构建和部署系统的方式至关重要。</p><p data-pi="6">我认为目前极少被涉足的一个领域，是让机器智能更贴近知识所在的地方。我的意思是，推进前沿 AI 系统有一条路径是非常自主的，不太依赖现实的混乱或人类日常经验。这是一条相当快速的、高度自主地推进 AI 的路径。自主性固然是其中一部分，而且是非常重要的一部分。但我认为缺失的一环——也是我们尚未做太多工作的部分——是真正关注交互混乱中的人类意图，更多地赋能人类，并在概念上将前沿 AI 系统构建为思维工具。</p><p data-pi="7">我是说，我认为最先进的 AI 系统是人类所能拥有的最不可思议的思维工具。那么这如何改变我们的思维方式？我们仍在思考，但它改变了思想的本质，改变了我们思考的内容。而这一部分，我认为其实是我们所熟悉的。自古以来，深刻的技术就改变了我们思考的内容，比如语言、文字、数字。想象一下，如果你不得不用罗马数字做乘法，那将非常痛苦。但是， 我们发明了今天的数字系统，这催生了整整一个数学领域，连小孩子也能很快做数学。</p><p data-pi="8">因此，它能促成这些非常具体的新思维方式。我认为这就是我们面前的机会，这种扩展我们思考内容的可能性，拥有新的、具体的思考对象。这需要非常有意识的研究工作和产品工作朝着这个方向推进。</p><p data-pi="9">我上次采访你是在 2023 年初，ChatGPT 刚刚改变了一切。你当时是 OpenAI 的 CTO。我交谈过的少数几个人说，基本上是你一手操持全局。只是提一嘴。那么，当你离开并创立 Thinking Machines 时，你是在奔向某样东西，还是在逃离某样东西？</p></section><section class="chunk chunk-eager"><p data-pi="10">毫无疑问，一旦我弄清楚那是什么，我就是在奔向它。 但我在 OpenAI 的经历非常——我是说，非常不可思议。我非常幸运能与世界上一些最投入、最有才华的人共事。那非常特别，我对那段经历非常感激。最终，我对这项技术应该如何发展形成了自己的看法——非常坚定的看法。一旦你形成了如此坚定的观点，从头开始创立一份事业是非常罕见的。这是一种难得的特权，而拥有 Thinking Machines 这样的公司让我们有机会专注于我们最坚信的方向，并围绕这一信念构建和指引整个公司。</p><p data-pi="11">嗯。让我回到那年晚些时候的董事会危机。你在宣誓作证时表示，你曾担心 AI 面临灾难性的崩溃风险。你对 Sam Altman 的领导提出了担忧。但在那一刻你必须行动。回头看，你认为你当时做对了吗？</p><p data-pi="12">那是一段非常激烈的时期，情况非常复杂。我相信很多人都曾陷入看似无解的处境，必须迅速做出非常艰难的决定。我认为这种复杂性的一部分在于，对世界来说它似乎是一夜之间发生的，但对我来说，这是多年来对使命、治理、如何组建团队以在肩负责任的同时构建持久的变革性技术的思考。组织的复杂性由来已久，我们也思考了很多。这次发生的具体事件，这个突发时刻，在时间上是高度紧张的。当董事会向我征求反馈时，我分享了我的看法，我对此负责。当他们做出决定，并要求我出任临时 CEO 时，我接受了。而当我意识到他们的决定可能对公司造成灾难性后果、一切可能分崩离析时，我觉得必须迅速行动。尽管表面上看起来非常混乱，但我认为在每一个时间点，我对自己该做什么都非常清楚。</p><p data-pi="13">嗯。</p><p data-pi="14">因为我最在意的是使命、使命的延续性，还有人和团队。这不是什么抽象的东西，而是我共事多年、并且深切关心的真实的人。而这一切都即将可能崩塌。所以我很清楚自己必须做什么：提供延续性和稳定性，帮助 Sam 回归，恢复局面，让团队就位，进而交付 GPT-4o 和 o1。我认为正是这一原则让我非常清楚自己该做什么。回过头看，我觉得我应该花更多时间去了解过渡计划。当然，事后看来，当时根本没有什么过渡计划，也没有充分考虑透明度、让团队参与进来、提供延续性这些问题。回想起来，我本该在这些方面多停下来想一想。</p><p data-pi="15">有意思。Helen Toner，前 OpenAI 董事会成员作证说，Mira 当时只是在观望风向，但她没意识到她自己就是风。如果你当时没有这么做，你认为会发生什么？</p><p data-pi="16">我认为 OpenAI 很可能会崩塌。</p><p data-pi="17">这个案子因为程序问题被驳回了，所以法庭从未裁定 OpenAI 的领导层是否违背了他们的使命。那么，构建世界上最强大技术的这些人，他们的品格有多重要？这有多关键？旋钮掌握在谁手中？</p><p data-pi="18">我认为人的正直、品格、价值观非常重要，因为你每天都要做很多决定，很多微观层面的决定，你必须相信你的团队在做正确的选择。而且我确实认为人们已经非常关注这一点了，这很好。但关注不够的是制度设计、决策机制、透明度，以及提升人们自主做决定的能动性。所以，不必非得有一个权威机构出来说，这是安全的，这是好的，盖个章批准了，而是每个人都可以自己权衡什么对自己适用。我认为我们今天构建 AI 系统的方式非常集中。这在一定程度上是历史遗留的做法，因为我们过去没有真实世界的数据和经验，推进 AI 的唯一方式就是在孤岛里、在真空中进行。</p><p data-pi="19">但我认为，现在是不同的建设时代了，我们可以从真实世界中的能力、张力、局限性中学到很多，并利用这些数据和信息来引导研究方向。这让人们能够真正独立思考。就像经常有人问我 chat GPT 的事，以及它的影响，当然从技术角度看它很了不起。但我认为 chat GPT 对我们影响最重要的方面，是让 AI 进入了公众意识。让每个人通过与它互动来理解 AI 是什么，而不是被告知 AI 能做什么、它的能力和局限性是什么。</p></section><section class="chunk"><p data-pi="20">你认为当下这个 AI 时刻对领导者提出了什么要求？我们应该信任当权者吗？我们应该信任 Sam Altman 吗？</p><p data-pi="21">我认为每个人都应该拥有工具和信息，能够为自己做这些决定。理想情况下，治理和决策的结构不应该系于一人之身，应该有制衡机制。我认为谁在研究这些系统、这些人的品格如何，非常重要，但我确实认为讨论过度集中在这方面，而对更广泛的制衡机制和制度思考不足。因为即使是出于好意的人，也会犯错，也可能低估做出某个决定的后果。所以道德不是一切，你必须考虑实际的决策结构、透明度和治理机制，这些都是复杂的事情。要让尽可能多的人参与进来，就必须分享知识、分享工具，而这也是我们实验室采取更开放做法的原因之一。</p><p data-pi="22">那么，这正是我的下一个问题：你所学到的一切，如何塑造了你在 Thinking Machines 正在构建的东西、你的构建方式，以及你想创造的文化？</p><p data-pi="23">是的，我非常坚信，继续构建前沿 AI 系统的方式是让所有人参与进来，让人类参与其中。实际上，humans in the loop 这个词还不足以描述它，因为这听起来像是一个检查点，我们签字批准然后就可以继续了。这更像是创建一种系统，它不仅仅是自主前进、把文明甩在身后，而更像是一辆双人自行车，两个人都在踩踏板，但上坡时，可能更强壮的那个人踩得更用力。但两个人的手都在方向盘上，这很重要，因为那是一种不同的系统，一个为协作而设计的系统。</p><p data-pi="24">而这就是我们试图在 Thinking Machines 构建的东西，我认为这非常有差异化，而且我希望它能提升人们所拥有的能动性，也能帮助我们引导研究方向，创造出更符合价值观的输出。因此，除了实用性之外，这种做法还能带来对齐——也就是真正创造出在现实世界中有用的技术。</p><p data-pi="25">你们聘请了很多顶尖人才。据报道有九位数的交易，同时也有一些备受关注的离职。你会如何描述人才争夺战？它有多残酷？我们应该如何看待这些离职？</p><p data-pi="26">拥有合适的人绝对是构建前沿 AI 实验室的重要组成部分。这些人不仅要有能力，还要与你整体的使命、信念和目标保持一致。是的，我不会称之为战争，因为这可能意味着出价最高者获胜。我认为在这个领域工作的大多数人，都真心关心如何推动这个领域的发展。现在确实是一个疯狂的时代，很多事情都是前所未有的。在竞争如此激烈的时期从零开始构建前沿 AI 实验室，强度大得惊人。因此，这会带来很多不确定性、不可预测性，以及一些我们已经看到的动荡。但我认为，当你试图在如此短的时间内压缩进展时，其他初创公司或企业在五年、十年里经历的好事和坏事，都可能在几个月甚至一年的时间里发生。我认为我们现在看到的一部分情况，需要放在这个背景下来理解。</p><p data-pi="27">嗯。</p><p data-pi="28">只是在压缩正在发生的进展总量。只要有好事发生，坏事也会随之而来，所以你必须平衡两者。但人们离开有不同的原因，也许他们对想从事的工作的热情发生了变化。我认为高额数字和薪酬数字吸引了人们的想象力，因为它们显然非常高。但我确实认为，对于一些最抢手的人才来说，这并不是主要的故事。</p><p data-pi="29">我认为这背后有很多事情在发生，从零开始创建一家公司就非常艰难，更不用说创建一家前沿 AI 实验室了。所以，这也是创业和从零到一做任何事所带来的挑战与艰辛的一部分。</p></section><section class="chunk"><p data-pi="30">嗯。Dario Amodei 曾预测会出现大规模白领失业。但 Sam 最近收回了他关于“就业末日”的一些预测。你认为这个行业在哪些方面过于悲观，又在哪些方面过于乐观？Mira Murati 对未来的愿景是什么？</p><p data-pi="31">所以，预测某种反乌托邦或乌托邦，在我看来过于简化了，因为事实是，我们在如何构建这项技术、我们打造的工具，以及如何部署它等方面，其实拥有很大的能动性。因此，这并不是一个注定的结局。当然存在这些风险。我们都理解构建前沿 AI 系统所带来的巨大潜力，这也正是我们致力于此的原因。我认为已经有大量关于不确定性和负面影响的讨论，我认同其中的许多风险。但或许在我可能持有不同意见或选择不同道路的地方在于，我认为我们拥有很大的能动性。当下这段人类和 AI 系统共同掌握方向盘、我们可以协作的时期，是一段非常重要的、必须把握好的时期。而且，我们越能减少因新能力和能力巨大跃升而带来的不连续性，就越好。</p><p data-pi="32">嗯。</p><p data-pi="33">这也正是我们在 Thinking Machines 采取这种做法，以及这家公司存在的原因。</p><p data-pi="34">所以你说目标是让人类参与其中，但会不会有一天人类不再需要参与这个循环？</p><p data-pi="35">（哼声）</p><p data-pi="36">到那时会发生什么？</p><p data-pi="37">这是有可能的。这更多的是关于对齐意图和对齐价值观。但如果你现在就把进步等同于将人类排除在开发循环之外，那么我认为当 AI 系统变得更加强大时，我们未来做对这件事的可能性微乎其微。因此，我认为更有可能、也更可持续的推进 AI 的道路是——以一种能够赋能并推进文明的方式——尽可能长时间地让人类参与其中，并确保这一时期真正具有意义。</p><p data-pi="38">嗯。</p><p data-pi="39">你们筹集了大量资金。外界期望很高。如果说过去几个月的 AI 新闻有什么是清楚的，那就是竞争异常残酷。你认为你具备那种杀手本能去与 OpenAI、Anthropic、Meta、Google、中国以及 X 竞争吗？这是一个竞争激烈的世界。</p></section><section class="chunk"><p data-pi="40">竞争确实非常激烈，是的，我们确实筹集了大量资金。我们为此感到自豪，但这并不是什么更大的成就。我们并不是为了打破某种纪录。真正重要的是你用这些资金做什么。我们不是一家普通的公司，所以我们确实需要大量资本来建设基础设施、科学基础，以及所有真正打造出差异化的前沿 AI 系统所必需的东西。所以我认为这部分本身并不独特。至于杀手本能，我想说这并不是驱动我的东西。我认为我们构建的技术拥有无限的潜力，而且很难全部抓住这些潜力。</p><p data-pi="41">真正驱动我的是捕捉其中一部分潜力，在这个世界上创造有用的东西，以有用且增强人类能动性、推进我们文明的方式将它们带到世界上。我认为存在健康的竞争，竞争是好事。它实际上能为人们创造更好的产品和更好的技术，在很多方面提高标准。我非常尊重许多在做这件事的公司。但我的动力并非来自日常。当我早上起床时，我并不是在思考如何击垮竞争对手。</p><p data-pi="42">（笑声）</p><p data-pi="43">你说过计划今年晚些时候发布一个预览版。你们现在进展如何？我们会看到什么？在其他这些公司纷纷上市的背景下，你觉得它们会因此分心，而你们会有更多喘息空间吗？</p><p data-pi="44">我们走自己的路。当然，竞争非常激烈，我们必须快速行动，但重要的是要将其与持久、长期的进步相平衡。我非常关心我们今天所做的决定要有利于我们的长期成功。这是我每天真正努力向团队灌输的东西。这涉及到很多细节，包括如何组建团队、如何建设基础设施，以及如何真正抵制短期压力。在某些情况下，你确实必须拥抱压力。但我想说，对我们来说，这只是第一步。展示交互模型，更具体地呈现我们所思考和关注的东西。我期待未来几个月，我们能展示模型方面更强的能力，推出更多这个方向的产品，并且让一切变得更加明显——真正让技术和产品自己说话。</p><p data-pi="45">那么，如果 Thinking Machines 取得了超乎想象的成功，五年后会出现什么今天不存在的东西？</p><p data-pi="46">预测未来极其困难，但我认为最重要的是创造一种未来：无论我们日常或每周工作多少小时，我们都能感受到一种能动性、尊严感，以及对未来的可能性。我希望我们能继续推进那些将带来巨大进步的能力，并以一种让我们保持希望、同时让我们对能够驱动的未来充满可能性的方式去做。</p><p data-pi="47">那么，愿不可能更少，可能性更多。谢谢。</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="Thinking Machines"># Thinking Machines</button><button class="tag" data-tag="交互范式"># 交互范式</button><button class="tag" data-tag="人才争夺"># 人才争夺</button><button class="tag" data-tag="复出访谈"># 复出访谈</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

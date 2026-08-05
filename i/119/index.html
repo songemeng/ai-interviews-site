@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>打造欧洲 AI 独角兽：麦肯锡对话 Mistral CEO Arthur Mensch - AI 访谈库</title>
+  <meta name="description" content="谈 Mistral 的大模型与开源战略，以及 AI 将如何改变工作场所。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/119/" />
+  <meta property="og:title" content="打造欧洲 AI 独角兽：麦肯锡对话 Mistral CEO Arthur Mensch" />
+  <meta property="og:description" content="谈 Mistral 的大模型与开源战略，以及 AI 将如何改变工作场所。" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">打造欧洲 AI 独角兽：麦肯锡对话 Mistral CEO Arthur Mensch</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Arthur Mensch · Mistral AI</div>
+      <h1 class="r-title">打造欧洲 AI 独角兽：麦肯锡对话 Mistral CEO Arthur Mensch</h1>
+      <p class="r-title-en">Creating a European AI unicorn: Interview with Arthur Mensch, CEO of Mistral AI | McKinsey</p>
+      <div class="r-meta">2024-05-02 · Eric Hazan &amp; Stéphane Bout (McKinsey) · 约 9 分钟读完 · <a class="r-src" href="https://www.mckinsey.com/featured-insights/lifting-europes-ambition/videos-and-podcasts/creating-a-european-ai-unicorn-interview-with-arthur-mensch-ceo-of-mistral-ai" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">谈 Mistral 的大模型与开源战略，以及 AI 将如何改变工作场所。</div>
+    </header>
+    
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">Since launching just one year ago, the AI start-up is already a unicorn being touted as a serious challenger to the incumbent AI giants of Silicon Valley, where Mensch and his two cofounders, Guillaume Lample and Timothée Lacroix, all worked before returning to France to found Mistral. Mensch sat down with senior partners Eric Hazan, Paris, and Stéphane Bout, Lyon, to explain Mistral’s open-source strategy, how Europe can compete in the AI race, and how AI will change the workplace.</p><p data-pi="1">Eric Hazan: Can you tell us a bit about your path to the creation of Mistral AI, and what led you to cofound this company?</p><p data-pi="2">Arthur Mensch: Sure. I’m a scientist by training. I have a PhD in machine learning and functional magnetic resonance imaging, after which I did two years of postdoc studies in mathematics. Then I joined Google DeepMind for two-and-a-half years, where I worked on large language models (LLMS), and left approximately one year ago.</p><p data-pi="3">Eric Hazan: What brought you to the field of generative AI?</p><p data-pi="4">Arthur Mensch : I guess I was brought there by typical research serendipity. I was working on deep learning and became interested. I did a paper on it, but then returned to the study of mathematics for two years. When I joined DeepMind, there was a small team working on deep learning and my interest was rekindled when I did some interesting work to improve processes.</p><p data-pi="5">[[globalsidebar QB]]  Eric Hazan: Is there any anecdote around the cofounding of Mistral AI you want to share with us?</p><p data-pi="6">Arthur Mensch : My cofounders Guillaume Lample and Timothée Lacroix and I have known each other for ten years, since we were students. We were all working on deep learning while I was at DeepMind, and Guillaume and Thimothée were at Meta, when the three of us were living and working in Silicon Valley. As we saw the field of generative AI accelerating—and since we’d known each other for so long—we realized we had a strong opportunity to create a company in France and speed up the process to create state-of-the-art large language models.</p><p data-pi="7">[[Video 1]]  Eric Hazan: Pivoting to a broader question, where do you see humans fitting in the AI journey?</p><p data-pi="8">Arthur Mensch: Humans will remain very important. We should view generative AI tools as a way to augmenting productivity and creativity. Typically, a generative AI tool that produces content only produces interesting content if you prompt it correctly, or create an application that is clever enough.</p><p data-pi="9">There’s a lot of work to be done on both the developer and the creator side to actually produce results that are actionable and have value. It’s not much more than your classical word editor, except that it’s more powerful. But you should really see it as a productivity tool and a way to create new applications. So in that setting, a large language model and generative AI acts as a new programming language which is more abstract and controllable by human language.</p></section><section class="chunk chunk-eager"><p data-pi="10">Eric Hazan: That’s a great segue to the next question. How do you think our lives—and particularly the way we work—will change in the next three to five years?</p><p data-pi="11">Arthur Mensch: Well, I think for many of our mundane tasks, we will be empowered by tools that can either do them for us or help us do them more quickly. Which means we’ll be able to focus on other things models cannot do and will never be replaced, which includes human relationship management, thinking outside of the box, creative thinking, and inventing new ideas. Generally, the kind of work that we will do in three to five years should be more rewarding than the kind of work we’re doing today.</p><p data-pi="12">[[Video 2]]  Eric Hazan: Let’s switch gears towards a specific one about Mistral. How do you explain the speed at which you’ve established yourself in the generative AI landscape?</p><p data-pi="13">Arthur Mensch: I guess there are two things. The first is that we have a very strong team with people experienced enough to produce and deliver in a very short period of time. It wasn’t an easy task, but that’s how we were able to ship in just four months.</p><p data-pi="14">The speed at which we became known and created some mindshare is really linked to the open-source strategy we used from the start. That’s created enormous demand, basically putting us ahead of companies— in terms of adoption metrics—that have been around for five years. That strategy played out well, which we are now leveraging to generate feedback on our products.</p><p data-pi="15">Eric Hazan: In a complicated landscape, where all AI companies seem to resemble each other, what makes Mistral different?</p><p data-pi="16">Arthur Mensch: Mistral’s difference is our portable solution, which can be used as software as a service (SaaS) through our application programming interface (API) with any cloud provider. You get access to similar APIs on the cloud, or with us. Most importantly, it can be deployed as a platform.</p><p data-pi="17">So if you have a private cloud, and you want to do heavy customisation of your workload, or you’re operating on-premises, we are basically one of the only solutions out there. This is all linked to our comfort with sharing our technology broadly—which is the reason we are comfortable sharing open-source technology.</p><p data-pi="18">Generally, our value proposition is threefold. The first is the flexibility of deployment and the portability of the platform, which allows users to deploy on a virtual private cloud (VPC), on-premises, and in the cloud.</p><p data-pi="19">The second one is value, because our models are very well-positioned in terms of price, and they operate from very fast to top-tier performance. The third value proposition is customisation. When we provide the models, we license the model weights, so those can be modified at will by the customer technical team, something we plan to support with services very soon.</p></section><section class="chunk"><p data-pi="20">Eric Hazan: Mistral has a very strong commitment to open-source models. Do you think they accelerate adoption and value creation?</p><p data-pi="21">[[Video 3]]  Arthur Mensch: For sure. I think this is an infrastructure technology which can be transformed into any kind of application. We really believe application makers will need to create differentiation and will also need to own the technology deeply. And the only way to do that is having access to the entire stack. The way to start this movement is convincing people that our open-source model allows them to create cheaper, faster, and better applications, which is how we started.</p><p data-pi="22">We’ve already started to see some results in the past six months, as many companies realize that they can move their workload away from closed-source APIs to open-source models. We’re now introducing commercial models that deploy and ship as if they were open source—with fully transparent access—which brings a lot of value to our customers.</p><p data-pi="23">Eric Hazan: I’ll hand over to Stéphane now to discuss generative AI in the European context.</p><p data-pi="24">[[Video 4]]  Stéphane Bout: We’ve observed a huge amount of gen AI investment and fierce R&amp;D competition across the world. How can Europe remain distinctive and competitive with other regions?</p><p data-pi="25">Arthur Mensch: The first thing to bear in mind is the fact this is an infrastructure software that typically requires some support and interaction with teams. So we advise our European customers to work with local players who are competitive on the performance side. Obviously, this is also a way to create more local engagement, shape the roadmap of our products, and generate some very valuable support.</p><p data-pi="26">The second aspect, and one I think might have hindered the development of generative AI in Europe somewhat, is the problem of language. All the earliest AI companies were US-based, working mostly in English. This is something we’re addressing with our models, making them much stronger in French, German, and other European languages.</p><p data-pi="27">As a European company, we’re aware of the language issue, which is very important for us—much more so than for US companies. Another important difference with the US is the lower penetration of public cloud in Europe. There are still a lot of European enterprises not using public cloud, often for very good reasons. So our offerings on private cloud and on-premises deployment really resonates with those customers.</p><p data-pi="28">Stéphane Bout: What are some of Europe’s major strengths and possible weaknesses in the global AI market?</p><p data-pi="29">[[Video 5]]  Arthur Mensch: As a region, Europe is full of talent, with lots of people from many countries who are very strong in mathematics and computer science. This is a great enabler for Mistral, but also a great enabler for customers, who usually have strong teams.</p></section><section class="chunk"><p data-pi="30">One weakness is the fact Europe remains a more fragmented market. It doesn’t have the tech ecosystem that exists in the US, where it’s obvious to sell to other tech companies. In France and elsewhere in Europe, there are some tech companies, but they are less tightly knitted together than in the US.</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="开源战略"># 开源战略</button><button class="tag" data-tag="欧洲AI"># 欧洲AI</button><button class="tag" data-tag="工作场所"># 工作场所</button><button class="tag" data-tag="企业AI"># 企业AI</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

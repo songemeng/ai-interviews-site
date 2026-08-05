@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Anthropic 哲学家 Askell：「AI 出岔子的方式有很多种」 - AI 访谈库</title>
+  <meta name="description" content="明镜周刊问答式文字专访：人格对齐团队负责人 Askell 谈如何为 Claude 注入价值观与「灵魂」，以及 AI 出错的多种可能。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/2784/" />
+  <meta property="og:title" content="Anthropic 哲学家 Askell：「AI 出岔子的方式有很多种」" />
+  <meta property="og:description" content="明镜周刊问答式文字专访：人格对齐团队负责人 Askell 谈如何为 Claude 注入价值观与「灵魂」，以及 AI 出错的多种可能。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/og-2784.jpg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">Anthropic 哲学家 Askell：「AI 出岔子的方式有很多种」</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Amanda Askell · Anthropic</div>
+      <h1 class="r-title">Anthropic 哲学家 Askell：「AI 出岔子的方式有很多种」</h1>
+      <p class="r-title-en">Anthropic Philosopher Askell: &quot;With AI, There Are Many Ways Things Can Go Wrong&quot;</p>
+      <div class="r-meta">2026-02-27 · DER SPIEGEL – The German View · 文字 · <a class="r-src" href="https://derspiegel.substack.com/p/with-ai-there-are-many-ways-things" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">明镜周刊问答式文字专访：人格对齐团队负责人 Askell 谈如何为 Claude 注入价值观与「灵魂」，以及 AI 出错的多种可能。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/og-2784.jpg" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><p class="r-empty">这条还没有文字稿——来自纯音频平台，待「音频下载 + 转文字」阶段处理。可点标题下方的「原文」链接收听。</p></div>
+    </article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

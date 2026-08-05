@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Noam Shazeer：谷歌老兵与 AI 发明者谈 AI 的未来 - AI 访谈库</title>
+  <meta name="description" content="由发明者本人拆解 ChatGPT 背后的技术源流：Transformer、自注意力、T5 与 LaMDA 的诞生过程，及其当时在 Character.AI 的工作。最有价值的部分是他直面&#39;谷歌研究商业化的得失&#39;——为什么发明了这一切的谷歌没能第一个把它变成产品。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/392/" />
+  <meta property="og:title" content="Noam Shazeer：谷歌老兵与 AI 发明者谈 AI 的未来" />
+  <meta property="og:description" content="由发明者本人拆解 ChatGPT 背后的技术源流：Transformer、自注意力、T5 与 LaMDA 的诞生过程，及其当时在 Character.AI 的工作。最有价值的部分是他直面&#39;谷歌研究商业化的得失&#39;——为什么发明了这一切的谷歌没能第一个把它变成产品。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/og-392.jpg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">Noam Shazeer：谷歌老兵与 AI 发明者谈 AI 的未来</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Noam Shazeer · Google DeepMind Gemini 技术联合负责人（受访时任 Character.AI CEO）</div>
+      <h1 class="r-title">Noam Shazeer：谷歌老兵与 AI 发明者谈 AI 的未来</h1>
+      <p class="r-title-en">EP 31 Noam Shazeer - Google veteran and AI inventor on future of AI</p>
+      <div class="r-meta">2023-01-21 · The Aarthi and Sriram Show · 1h3m · 约 4 分钟读完 · <a class="r-src" href="https://www.youtube.com/watch?v=XxFj5jdb6qQ" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">由发明者本人拆解 ChatGPT 背后的技术源流：Transformer、自注意力、T5 与 LaMDA 的诞生过程，及其当时在 Character.AI 的工作。最有价值的部分是他直面&#39;谷歌研究商业化的得失&#39;——为什么发明了这一切的谷歌没能第一个把它变成产品。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/og-392.jpg" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">订阅 登录 第31期 与发明者之一 Noam Shazeer 深入探讨 ChatGPT 背后的研究突破——transformer、self-attention 及更多内容《The Aarthi and Sriram Show》2023年1月21日 83 分享</p><p data-pi="1">“最好的应用是我们尚未想到的东西。”</p><p data-pi="2">最近几周，ChatGPT 风靡一时。但其底层是 AI 领域的几项关键进展——transformer、self-attention、LLM 等等。</p><p data-pi="3">本周，我们将与 Noam Shazeer 深入交流。他是 Character.AI 的创始人、Google 老兵，也是 AI 领域多项关键进展的核心贡献者，包括 transformer、Mesh-Tensorflow、T5 以及 Google 的 LaMDA 对话系统。</p><p data-pi="4">我们涵盖的话题包括：Google 与 AI 的演变、transformer、LLM、神经网络、Google 研究成果的商业化、ChatGPT 与 AI 的未来、工程哲学、他在 Character.AI 的工作，以及更多精彩内容！</p><p data-pi="5">欢迎留言、评分，或在 Twitter 上 @ 我们——我们会转发最喜欢的那些！</p><p data-pi="6">• Character.AI: https://beta.character.ai</p><p data-pi="7">• Aarthi and Sriram’s Good Time Show: Youtube, Substack, Twitter</p><p data-pi="8">• Sriram Krishnan: Twitter, Instagram, Blog</p><p data-pi="9">“Paul Buchheit 问我怎么做拼写纠错器，结果我写出了 Google 第一个好用的拼写纠错器。”</p></section><section class="chunk chunk-eager"><p data-pi="10">“有一天，Larry Page 认定管理者是有害的，于是基本上把 Google 变成了扁平化组织；二十年后，当你看到 Elon Musk 在 Twitter 的所作所为，会发现有一些相似之处，那就是：砍掉大量中层管理，让工程师去做他们最擅长的事。”——Sriram</p><p data-pi="11">“我喜欢把[神经网络中的预测过程]想象成一位极具才华的即兴演员。”</p><p data-pi="12">“最好的应用是我们尚未想到的东西。”</p><p data-pi="13">Character.ai —— 由 Noam Shazeer 和 Daniel De Freitas 打造的 AI 驱动聊天机器人</p><p data-pi="14">Noam Shazeer 联合撰写的 transformer 研究论文</p><p data-pi="15">Google 的 LaMDA：用于对话应用的语言模型</p><p data-pi="16">Larry Page 在 Google 解雇管理者以实现扁平化组织</p><p data-pi="17">无监督方法：主题建模与聚类</p><p data-pi="18">潜在狄利克雷分配——生成式统计模型</p><p data-pi="19">什么是神经网络？——IBM 文章</p></section><section class="chunk"><p data-pi="20">Noam Shazeer 2018 年在 WeCNLP 上关于 NLP 的演讲</p><p data-pi="21">Attention Is All You Need，研究论文</p><p data-pi="22">Long Short-Term Memory，作者 Sepp Hochreiter、Jürgen Schmidhuber</p><p data-pi="23">Attention 与 Self-Attention 有何区别？作者 Angelina Yang</p><p data-pi="24">[05:00] 与 Noam Shazeer 探讨 Google 的演变</p><p data-pi="25">[39:01] 为何 Google 未能将大量研究成果产品化？</p><p data-pi="26">82 分享 关于本帖的讨论 评论 Restacks InfinityThink 2023年2月11日 我真的很喜欢你们整理的重点引语、参考资料，以及带时间戳的访谈分段。</p><p data-pi="27">整理得太好了……我今天才发现你们，很高兴我点开了链接。</p><p data-pi="28">非常感谢，祝你们在未来的道路上一帆风顺，期待继续向你们学习。</p><p data-pi="29">回复 分享 The Aarthi and Sriram Show 的 1 条回复 还有 1 条评论…… 置顶 最新 讨论 暂无帖子。</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="Transformer"># Transformer</button><button class="tag" data-tag="自注意力"># 自注意力</button><button class="tag" data-tag="LaMDA"># LaMDA</button><button class="tag" data-tag="Character.AI"># Character.AI</button><button class="tag" data-tag="LLM 起源"># LLM 起源</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

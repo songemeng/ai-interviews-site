@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Mojo 与打造 CUDA 替代品——对话 Chris Lattner（Software Engineering Daily） - AI 访谈库</title>
+  <meta name="description" content="Lattner 回顾从 LLVM、Swift 到 Modular 的工程生涯，讲解 Mojo 的设计目标：Python 的易用性、C 的性能加上 Rust 的安全性。他的核心主张：AI 基础设施必须摆脱单一厂商绑定，同一份代码应能在不同厂商的 GPU 上高性能运行。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/504/" />
+  <meta property="og:title" content="Mojo 与打造 CUDA 替代品——对话 Chris Lattner（Software Engineering Daily）" />
+  <meta property="og:description" content="Lattner 回顾从 LLVM、Swift 到 Modular 的工程生涯，讲解 Mojo 的设计目标：Python 的易用性、C 的性能加上 Rust 的安全性。他的核心主张：AI 基础设施必须摆脱单一厂商绑定，同一份代码应能在不同厂商的 GPU 上高性能运行。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/og-504.jpg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">Mojo 与打造 CUDA 替代品——对话 Chris Lattner（Software Engineering Daily）</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Chris Lattner · Modular 联合创始人兼 CEO、LLVM/Swift/Mojo 作者</div>
+      <h1 class="r-title">Mojo 与打造 CUDA 替代品——对话 Chris Lattner（Software Engineering Daily）</h1>
+      <p class="r-title-en">Mojo and Building a CUDA Replacement with Chris Lattner (Software Engineering Daily)</p>
+      <div class="r-meta">2025-05-22 · Software Engineering Daily · 55m · 约 2 分钟读完 · <a class="r-src" href="https://softwareengineeringdaily.com/2025/05/22/mojo-and-building-a-cuda-replacement-with-chris-lattner/" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">Lattner 回顾从 LLVM、Swift 到 Modular 的工程生涯，讲解 Mojo 的设计目标：Python 的易用性、C 的性能加上 Rust 的安全性。他的核心主张：AI 基础设施必须摆脱单一厂商绑定，同一份代码应能在不同厂商的 GPU 上高性能运行。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/og-504.jpg" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">Python 是人工智能和数据科学应用中的主流语言，但它缺乏充分发挥 GPU 硬件性能所需的执行效率与底层控制能力。因此，开发者往往依赖 NVIDIA 的 CUDA 框架，这增加了复杂性，也使开发栈趋于碎片化。</p><p data-pi="1">Mojo 是一门全新的编程语言，旨在融合 Python 的简洁性、C 语言的性能以及 Rust 的安全性。它还致力于提供一种与厂商无关的 GPU 编程方案。Mojo 由知名系统工程师 Chris Lattner 主导开发，他在计算机科学领域做出了诸多开创性贡献，包括 LLVM、Clang 编译器以及 Swift 编程语言。</p><p data-pi="2">Chris 是 Mojo 背后的公司 Modular AI 的联合创始人兼 CEO。在本期节目中，他做客节目，分享自己的工程生涯，以及目前在 AI 基础设施和 Mojo 语言方面的工作。</p><p data-pi="3">Kevin Ball（又称 KBall）是 Mento 的工程副总裁，同时也是一名面向工程师与工程管理者的独立教练。他曾联合创立两家公司并担任 CTO，创办了圣迭戈 JavaScript 技术聚会，并通过 Latent Space 组织 AI inaction 讨论小组。</p><p data-pi="4">请点击这里查看本期节目的文字记录。</p><p data-pi="5">赞助咨询：sponsor@softwareengineeringdaily.com</p><p data-pi="6">Twitter 热门  NanoClaw 与个人 AI 智能体的崛起 93 次观看  AWS 的 Agentic DevOps 51 次观看  OpenAI 与 Codex，嘉宾 Thibault Sottiaux 和 Ed Bayes 30 次观看  Weights &amp; Biases，嘉宾 Chris Van Pelt 26 次观看  Web Native 游戏开发 25 次观看</p><p data-pi="7">Software Daily  订阅 Software Daily，这是一份精选简报，为您呈现软件工程社区中最优质和最新的内容。</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="Mojo"># Mojo</button><button class="tag" data-tag="GPU 编程"># GPU 编程</button><button class="tag" data-tag="编译器"># 编译器</button><button class="tag" data-tag="AI 基础设施"># AI 基础设施</button><button class="tag" data-tag="厂商中立"># 厂商中立</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>从 Swift 到 Mojo：Chris Lattner 谈高性能 AI 工程（Pragmatic Engineer 播客） - AI 访谈库</title>
+  <meta name="description" content="面向工程师的深谈：Mojo 的起源故事、从 Swift 项目吸取的语言设计教训，以及 Modular 团队实际在用的 AI 编程工具。他的观点是编译器与语言设计是被低估的杠杆——更好的语言能让 AI 开发同时变得更快和更普惠。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/505/" />
+  <meta property="og:title" content="从 Swift 到 Mojo：Chris Lattner 谈高性能 AI 工程（Pragmatic Engineer 播客）" />
+  <meta property="og:description" content="面向工程师的深谈：Mojo 的起源故事、从 Swift 项目吸取的语言设计教训，以及 Modular 团队实际在用的 AI 编程工具。他的观点是编译器与语言设计是被低估的杠杆——更好的语言能让 AI 开发同时变得更快和更普惠。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/og-505.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">从 Swift 到 Mojo：Chris Lattner 谈高性能 AI 工程（Pragmatic Engineer 播客）</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Chris Lattner · Modular 联合创始人兼 CEO、LLVM/Swift/Mojo 作者</div>
+      <h1 class="r-title">从 Swift 到 Mojo：Chris Lattner 谈高性能 AI 工程（Pragmatic Engineer 播客）</h1>
+      <p class="r-title-en">From Swift to Mojo and High-Performance AI Engineering with Chris Lattner (The Pragmatic Engineer Podcast)</p>
+      <div class="r-meta">2025-11-05 · Gergely Orosz · 1h32m · 约 9 分钟读完 · <a class="r-src" href="https://newsletter.pragmaticengineer.com/p/from-swift-to-mojo-and-high-performance" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">面向工程师的深谈：Mojo 的起源故事、从 Swift 项目吸取的语言设计教训，以及 Modular 团队实际在用的 AI 编程工具。他的观点是编译器与语言设计是被低估的杠杆——更好的语言能让 AI 开发同时变得更快和更普惠。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/og-505.png" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">从 Swift 到 Mojo，以及 Chris Lattner 谈高性能 AI 工程</p><p data-pi="1">我与 LLVM、Swift 和 Mojo 的创造者 Chris Lattner 坐下来，探讨更优秀的语言和编译器设计如何为更快速、更易上手的 AI 开发打开大门。</p><p data-pi="2">Gergely Orosz</p><p data-pi="3">2025年11月5日</p><p data-pi="4">906 次分享</p><p data-pi="5">文稿</p><p data-pi="6">立即在 YouTube、Spotify 和 Apple 平台收听和观看。本期文稿见页面顶部，时间戳见页面底部。</p><p data-pi="7">20:28 —— Swift 诞生记</p><p data-pi="8">47:28 —— Chris 在 Google 和 Tesla 工作时的 AI 心得</p><p data-pi="9">52:24 —— Mojo 编程语言的诞生故事（Mojo 是一门新兴的、高性能且兼容 Python 的编程语言）</p></section><section class="chunk chunk-eager"><p data-pi="10">1:19:00 —— Modular 团队使用的 AI 编程工具（Chris 目前的创业公司）</p><p data-pi="11">• Statsig —— 功能开关、数据分析、实验等一体化的统一平台。Graphite、Notion 和 Brex 等公司都依靠 Statsig 来衡量他们发布速度的影响。在此获取 30 天企业试用。</p><p data-pi="12">• Linear —— 现代产品开发系统。Linear 是 Swift 的重度用户：他们刚刚用自己对 Apple Liquid Glass 设计语言的诠释重新设计了原生 iOS 应用。这款新应用追求速度与性能——正如 Linear 本身一样。去看看吧。</p><p data-pi="13">Chris Lattner 是过去二十年间最具影响力的工程师之一。他创建了 LLVM 编译器基础设施和 Swift 编程语言——Swift 让更广泛的工程师群体得以进入 iOS 开发。如今，凭借 Mojo，他正致力于在 AI 领域做同样的事，降低编写 AI 应用的门槛。</p><p data-pi="14">我在旧金山与 Chris 坐下来，聊了聊语言设计、设计 Swift 和 Mojo 的经验教训，还有——当然！——编译器。很难找到一个像 Chris 这样对编译器和编程都同样充满热情且学识渊博的人。</p><p data-pi="15">我们还讨论了为什么专家即便在当前工具拖慢速度时也常常抗拒改变；他在大大小小工程团队中学到的关于 AI 和硬件的知识；以及为什么编译器工程仍然是理解软件真正工作原理的最佳途径之一。</p><p data-pi="16">“我相信程序员的力量。我相信那些想要创造事物的人所具备的人类潜能。这从根本上就是我热爱软件的原因——你可以创造出任何你能想象到的东西。”</p><p data-pi="17">这一期充满了有趣的细节。其中我最喜欢的一些：</p><p data-pi="18">“编译器很酷。别让任何人告诉你不是这样。”这是我最喜欢的一句 Chris 的话。</p><p data-pi="19">先在大公司内部证明商业价值！Apple 聘用 Chris 来开发 LLVM，是因为他们对 GCC 感到不满。然而，Chris 从经理那里得到了一些善意的建议，他“感觉到，如果一年后 Apple 还没有在某个产品里用上 LLVM，他们就会要求我开始做别的事情。”这一认识促使 Chris 找到了第一个成为 LLVM 内部客户的团队：那就是 OpenGL 团队，在那里他得以“做了一件非常小、但确实有价值的事。”此后，Apple 内部越来越多的团队开始采用 LLVM。</p></section><section class="chunk"><p data-pi="20">Chris 秘密地开发了 Swift，历时一年多。在一年半的时间里，Chris 利用夜晚和周末开发 Swift，而白天则管理着一个 40 多人（而且还在不断壮大！）的团队。</p><p data-pi="21">Apple 的领导层最初对 Swift 一点都不热衷。当 Chris 向领导层展示 Swift 的早期版本时，得到的回应是：“我们为什么需要一门新语言？是 Objective-C 让 iPhone 成功的。”</p><p data-pi="22">为 LLM 专门设计一门新编程语言——Chris 认为这没有意义。一门编程语言的可读性比它写起来是否容易更重要。因此，在一个越来越多由 AI agent 编写代码的世界里，最强大的语言将是那些富有表现力且可读性强的语言。这或许是 Python 依然如此受欢迎的原因之一，也是 Mojo 的设计方向。</p><p data-pi="23">为什么 Mojo 既具备高可读性，又能实现高性能：Mojo 在可读性方面从 Python 汲取了大量灵感，同时也增加了让语言更高性能的特性：例如，压缩浮点格式（能够通过使用 Float16 等类型降低浮点数的精度，从而减少内存占用并加快计算速度），以及像 parameter 这样的元编程能力，用于编译期计算。</p><p data-pi="24">Modular 如何招聘应届毕业生：他们寻找具有求知欲、做事无所畏惧的人，如果之前曾为开源项目做过贡献，那也是一个积极的信号。</p><p data-pi="25">Chris 的成功背后，是常人难以想象的更多付出，以及不盲从他人。LLMV、Clang、Swift 和 Chris 创造的其他项目如今已全行业通用：但在早期，这些项目几乎得不到什么支持。正如 Chris 所说：“我不指望人们能理解我。通常的情况是，这些项目随着时间的推移不断成长，直到有一天突然豁然开朗，人们也开始理解了。”</p><p data-pi="26">Chris 最自豪的事：帮助他人创造软件。Chris 至今仍记得，在 Swift 普及之后，有人当街拦住他，感谢他让他们能够用这门更容易上手的语言成为 iOS 开发者。</p><p data-pi="27">• 坐在前排围观 Uber 那场疯狂的 YOLO 应用重写</p><p data-pi="28">• 与 Armin Ronacher 聊 Python、Go、Rust、TypeScript 和 AI</p><p data-pi="29">(19:25) Chris 如何争取到在 Apple 开源的支持</p></section><section class="chunk"><p data-pi="30">(24:32) 设计一门语言的过程</p><p data-pi="31">(35:48) Swift Playgrounds：让编程触手可及</p><p data-pi="32">(40:23) Swift 解决了什么问题，以及它带来了哪些技术债</p><p data-pi="33">(47:28) 在 Google 和 Tesla 的 AI 心得</p><p data-pi="34">(51:23) SiFive：学习硬件工程</p><p data-pi="35">(57:15) Modular 对双层技术栈的押注</p><p data-pi="36">(1:15:44) Modular 作为一家公司的规模有多大？</p><p data-pi="37">(1:19:00) Modular 团队使用的 AI 编程工具</p><p data-pi="38">(1:22:59) Modular 招聘什么样的软件工程师</p><p data-pi="39">(1:25:22) 为 LLM 设计的编程语言？不必了</p></section><section class="chunk"><p data-pi="40">(1:29:06) 为什么你应该学习并理解编译器</p><p data-pi="41">• LinkedIn: https://www.linkedin.com/in/chris-lattner-5664498a</p><p data-pi="42">• Autoconf: https://en.wikipedia.org/wiki/Autoconf</p><p data-pi="43">• REPL and Debugger: https://www.swift.org/documentation/lldb/</p><p data-pi="44">• Code Complete with Steve McConnell: https://newsletter.pragmaticengineer.com/p/code-complete-with-steve-mcconnell</p><p data-pi="45">• Python: The Documentary: https://lwn.net/Articles/1035537/</p><p data-pi="46">• CUDA: https://developer.nvidia.com/cuda-toolkit</p><p data-pi="47">• GPU puzzles: https://puzzles.modular.com/introduction.html</p><p data-pi="48">• Claude Code: https://www.claude.com/product/claude-code</p><p data-pi="49">• Beyond Vibe Coding with Addy Osmani: https://newsletter.pragmaticengineer.com/p/beyond-vibe-coding-with-addy-osmani</p></section><section class="chunk"><p data-pi="50">• Beyond Vibe Coding: From Coder to AI-Era Developer: https://www.amazon.com/Beyond-Vibe-Coding-AI-Era-Developer/dp/B0F6S5425Y</p><p data-pi="51">• Kaleidoscope Tutorial: https://llvm.org/docs/tutorial/LangImpl01.html</p><p data-pi="52">• Rust Compiler Development Guide: https://rustc-dev-guide.rust-lang.org/overview.html#overview-of-the-compiler</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="Mojo 起源"># Mojo 起源</button><button class="tag" data-tag="语言设计"># 语言设计</button><button class="tag" data-tag="编译器"># 编译器</button><button class="tag" data-tag="AI 编程工具"># AI 编程工具</button><button class="tag" data-tag="工程文化"># 工程文化</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

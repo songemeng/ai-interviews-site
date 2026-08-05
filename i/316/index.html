@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Anthropic CPO Mike Krieger：自下而上构建 AI 产品（红杉 AI Ascent 2025） - AI 访谈库</title>
+  <meta name="description" content="红杉 AI Ascent 2025 对谈：AI 产品开发、agent 之间交互的未来与组织如何适应 AI 工作流。看点：他披露 Artifacts 的诞生路径——一个研究原型被一名设计师加一名工程师接手后直接推向生产。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/316/" />
+  <meta property="og:title" content="Anthropic CPO Mike Krieger：自下而上构建 AI 产品（红杉 AI Ascent 2025）" />
+  <meta property="og:description" content="红杉 AI Ascent 2025 对谈：AI 产品开发、agent 之间交互的未来与组织如何适应 AI 工作流。看点：他披露 Artifacts 的诞生路径——一个研究原型被一名设计师加一名工程师接手后直接推向生产。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/yt-Js1gU6L1Zi8.jpg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">Anthropic CPO Mike Krieger：自下而上构建 AI 产品（红杉 AI Ascent 2025）</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Mike Krieger · Anthropic 首席产品官</div>
+      <h1 class="r-title">Anthropic CPO Mike Krieger：自下而上构建 AI 产品（红杉 AI Ascent 2025）</h1>
+      <p class="r-title-en">Anthropic CPO Mike Krieger: Building AI Products From the Bottom Up</p>
+      <div class="r-meta">2025-05-09 · Sequoia Capital (AI Ascent 2025) · 23m · 约 23 分钟读完 · <a class="r-src" href="https://www.youtube.com/watch?v=Js1gU6L1Zi8" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">红杉 AI Ascent 2025 对谈：AI 产品开发、agent 之间交互的未来与组织如何适应 AI 工作流。看点：他披露 Artifacts 的诞生路径——一个研究原型被一名设计师加一名工程师接手后直接推向生产。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/yt-Js1gU6L1Zi8.jpg" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">各位可能都知道 Mike 是 Anthropic 的首席产品官，但他也一度是 Sequoia 的创始人，对吗？</p><p data-pi="1">对。</p><p data-pi="2">不过只维持了短短一周。</p><p data-pi="3">短短一周。那家公司是什么？</p><p data-pi="4">Instagram。</p><p data-pi="5">Instagram。谢谢。欢迎各位。Mike、Lauren，接下来交给你们。感谢你来参加，Mike。</p><p data-pi="6">很高兴来到这里。大家好。</p><p data-pi="7">嗯，也许有人还不知道，Mike 其实是个内容迷，所以能请到这位 AI 电影制作人跟我们交流特别有意思。你认为 AI 内容的世界会走向何方？</p><p data-pi="8">我觉得，无论媒介是什么，或者创作中用了多少 AI，最终都会回到这个问题：有没有故事在讲述？内容背后是否有一个能让人产生联结、并长期与之互动的人？所以，这只是讲故事的人工具箱里的又一件工具。我很好奇你们怎么想——当你们创作更多内容、生成更多像素时，如何帮助人们建立控制感？就像 Anthropic 在通过 mechanistic interpretability 帮助我们理解模型方面做得很好。模型现在处于什么状态？你们是怎么做出 Golden Gate Claude 的？你们怎么考虑把这种选择权交给用户和客户？</p><p data-pi="9">是的，我觉得有些东西在当下可能还有用，比如讨论水印，或者“这是不是 AI 生成的”。也许今天早上对话里提到过，我上午不在。但未来大部分内容都会是 AI 生成的，所以区分“这是不是 AI 做的”我认为将不再有意义。不过，关于衍生关系和出处之类的问题仍然会很有意思。借助 AI，这些问题反而可能变得更容易解决。说起来有点好笑，又回到区块链了，我感觉现在聊这个已经不太酷了，但理论上区块链想解决的某个问题，当整个 pipeline 都变成比特时，可能变得容易得多。不过是的，我觉得过去世界里重要的东西——比如你引用了什么来源、有没有引用——当我想到文档时，这些仍然重要，而且现在更容易做到了。但“是不是 AI 生成的”这个问题，我认为未来不再是值得关注的问题。</p></section><section class="chunk chunk-eager"><p data-pi="10">有意思。那我们深入聊聊 Anthropic，以及你们正在打造的一些产品。你们在 artifacts、编程模型和 MCP 方面都做得非常好。我很好奇，作为首席产品官，你打造产品的框架是什么？如何让产品不只是模型本身？</p><p data-pi="11">嗯，我想两方面吧。第一，Instagram 时代有用的东西现在依然有用，对吧？就是你在为人们解决真正的问题吗？如果你在打造开发者工具，你是否让人们能够快速、有趣、新颖地做出东西？如果你在打造面向终端用户的产品，你是否真正满足了人们当下的需求？所以我认为这一点现在和过去一样重要。我觉得不一样的是，我需要忘掉过去的一课：在 Instagram 时，我们的规划方式更自上而下，时间框架是三到六个月。Thomas 坐在第三排，他能理解，我们当时更像是“规划然后交付”。</p><p data-pi="12">我认为 Anthropic 也是如此，而且跟我在 OpenAI 和其他地方的同行聊过以后发现，你必须允许更多自下而上的创造力。因为我觉得最好的产品往往是那些非常贴近模型去打造的，而它们的能力通常要到很晚才能看清。所以我学会了把创意过程中的某些部分反转过来，更多地采用自下而上的方式。作为一个有点控制欲的人，这有点难，但这也带来了一些非常有趣的东西。比如 artifacts 最初是一个研究原型，后来被一位设计师和一位工程师接手，然后上线了生产环境。</p><p data-pi="13">我不光从我们这里听过这种故事，也从领域内其他创作者那里听到过。</p><p data-pi="14">能给我们举些具体例子吗？我很好奇，也许 MCP 是整个行业都开始采用的更有趣的产品之一。它是怎么来的？有什么故事？</p><p data-pi="15">说到 MCP 挺好笑的，因为我最近还在想，我一半的工作就是制作表情包在内部发。我当时做了一个关于 MCP 诞生时间的梗，说它只是两个人眼中的一丝闪光。我回头去查，发现它其实始于我们尝试实现 Google Drive 集成的时候，当时我们还在做 GitHub 集成。这两件事明明应该有很多共同之处，对吧？都是把上下文带入模型。但我们内部做了两套完全不同的实现，而排队等着做的第三个又会是另一套完全定制的东西。</p><p data-pi="16">通常我的规律是：同样的事做三遍，第三遍时你就可以尝试抽象出通用模式了。这次就是这样——好，共同点是什么？方向会往哪走？但这绝对不是自上而下的“我们需要一个协议来更好地与模型交互”，而是两个工程师觉得“对，我觉得这主意不错，我们去搭个原型做出来吧”。然后花时间把协议做得更好，让它真正开放，这样 Anthropic 之外也能采用。因为我们觉得价值不在于由我们独家掌控一个协议，而在于它更加标准化。之后不断迭代，现在它越来越有社区的味道了。</p><p data-pi="17">Anthropic 已经有一千多人了，但感觉仍然很 startup。我们在跟 Microsoft、Amazon 这些地方合作，他们有各种四个字母的缩写，我其实本来想举例的，但有些都记不住了。像是深度认证、Exchange 服务器的身份管理之类的。我心想，这些可不是我们优先考虑的，但当你把它开放给更广泛的群体时，它们就变得重要了。</p><p data-pi="18">太棒了。那你觉得接下来会怎么走？看到在座很多人开始采用 MCP 很有意思。你们昨天好像刚发布了关于集成的新版本。那么，当你有了这颗自下而上埋下的种子后，如何培育它、让它成长？</p><p data-pi="19">我觉得 MCP 相关的两个领域最让我兴奋。一个是关于执行动作。很多这类项目的 V1 都集中在如何把上下文带入模型，比如我们发布的集成，你可以拉取 GitHub，可以触发 Zapier 动作。但我认为正确的模式，或者说真正去执行动作，未来会重要得多。因为理想情况下，你不希望这些东西只停留在检索信息，还要能够自动化工作流。第二个是当 MCP 以及更广泛的 agent 彼此交互时，正确的协议应该是什么。现在试图过度标准化还为时过早。我知道 Google 在做 agent-to-agent，我觉得我们仍在探索正确的模式应该是什么。</p></section><section class="chunk"><p data-pi="20">但我觉得这会非常有趣。我们内部也在讨论：到了什么阶段，你的 agents 会去雇佣其他 agents？这种经济形态又会是什么样子？这是我对未来真正感到兴奋的地方。</p><p data-pi="21">太棒了。说到这里，你们的编码产品做得非常出色，感觉已经不只是自下而上几个人 tinkering 那么回事了。我很好奇，你们是如何将其作为战略重点的，以及到目前为止做对了什么。</p><p data-pi="22">是啊，即便在编码方面，看着我们的研究人员，我也深感敬佩。当然，你可以自上而下地指明方向，但很多研究创新其实来自少数人推动 RL 的边界，就像 Dan 刚才提到的那样。很多东西源于探索发现，而这个过程必须很大程度上是自下而上的。</p><p data-pi="23">我觉得我们在编码方面努力做好的一点是，不只盯着 benchmarks，而是真正关注它生成的代码是否让人愿意协作，是否能带来好的结果。这肯定是我们会继续推进的方向。但有意思的是，vibe coding 这个词绝对不是我们发明的。我认为它有其天然局限——它能做出有趣的东西，但如果你想用这种方式，和一支100人的团队维护整个 codebase，那肯定不行。所以我们内部正在摸索，生成代码在我们的 codebase 里到底该扮演什么角色。我们用得非常多。超过一半的 pull requests 是 cloud code 生成的，现在可能已经超过70%了。</p><p data-pi="24">但这对于 code review 意味着什么，是我们正在探索的。你可以用 cloud code 做 review，或者做 PR，但这样就陷入无限递归了。关键在于，你什么时候需要有 oversight，来判断这是否会把我们引向架构死胡同？如果你能靠 AI coding 强行覆盖通常的技术债务重写，那这是否还重要？我觉得我们，以及其他在实验室里研究 coding models 的人，在某种程度上都是这些现象的首批试验对象，无论好坏。</p><p data-pi="25">其实我非常想听听 coding agents 变得更强后带来的一些二阶效应。code reviews 是其中之一。我好奇的是，当人人都能写软件时，我们会走向何方？</p><p data-pi="26">我觉得在内部我意识到的是，它会让产品组织中的其他所有低效环节变得极其痛苦。因为现在 alignment meeting 阻碍的不只是一小时的工程工作，而是相当于四到八小时的工程量。所以我觉得，随着代码生成变快，我们的产品组织很可能会面临很大冲击。当你在推动对齐上浪费更多时间时，真的很难受，而 models 在这方面其实帮不上什么大忙。它们可以总结会议，或许能为下一次对话做准备，但它们还没有达到能在组织层面推动决策的程度。</p><p data-pi="27">有意思。你们 Anthropic 的人在 Anthropic 内部大量使用这些产品，这里有几个例子。我好奇的是，在过去6到12个月里，你们做了或尝试了哪些事情，是在场的每个人都应该在自己的 models 或其他 models 上尝试的，来让它们更好地工作？</p><p data-pi="28">我觉得很酷的一点是，看到公司内部非技术部门的不同职能开始大量使用 models。比如销售人员用它准备会议，他们从使用现成工具开始，然后某些 blocker 变得非常明显，这时我们可能会在里面定制一些东西。这很有意思，但即便在 AI 实验室，它的普及程度也比你想象的要低。即便在一个团队内部，也有特别擅长使用它的人，以及更传统做事方式的人，前者可能更有效率、遇到的阻碍更少，但这还没成为人人必须使用的标配。</p><p data-pi="29">就我自己而言，我把它当作思维伙伴。每当我写东西，无论是战略文档、规划还是 performance review，我都会——这几乎就像我当初有了 Co-Pilot 之后，在飞机上尝试 coding 时开始感到别扭一样，你会觉得：等等，我感觉自己只有平时一半的工程能力，因为这个工具没在帮我。现在如果我写东西时没有让 Claude 额外过一遍，我就会想：啊，这可能没有得到充分的审视。</p></section><section class="chunk"><p data-pi="30">刚才 Sam 谈到，20多岁的人是使用这些 models 最得心应手的。从你的 model usage 来看，你肯定更接近20多岁的状态，这很有意思。</p><p data-pi="31">是啊。不过看到人们进入职场的方式也挺让人惊讶的。我们和大学做了更多合作，你会发现他们进入职场时的预期非常不同，他们预期会大量使用 GenAI，而且对此没有 stigma。这是很重要的一点。</p><p data-pi="32">我们内部最成功的一些产品，是那些具有共享可见性的。比如我们在 Slack 里做了很多集成，把 cloud 和内部工具结合起来。我发现这非常有助于打破那种心态，即便在 Anthropic 内部也存在这种心态：“哦，这是你用 AI 做的吗？”对比“是啊，我省了两个小时，我当然有更好的事情要做，而不是写这份 performance review 之类的，对吧？”所以，看着过去一年半里，从“我不太确定用 cloud 写 performance review 是否合适”到现在被鼓励使用，我认为这是一个积极的发展。当然，你应该读一遍结果，确保它确实准确。</p><p data-pi="33">但特别奇妙的是，我们有一个内部工具可以遍历所有 Slack 消息和内部文档。它可以是公共频道，也可以是私人频道，取决于你想怎么用，但大多数人用公共版本。就在前几周的 performance review 季，人们用它来生成初稿，而且是在公共频道里做这件事，非常有趣。我不知道，我在想，那些从小就默认会把 AI 用于大量工作的人，会不会更自在，对使用 AI 没有那种 stigma。这让我想起早期 Midjourney 的日子。</p><p data-pi="34">是啊，是啊，没错。那种使用的共享可见性，我仍然认为非常重要。我觉得人们还处于理解如何在工作中使用这些工具的极早期阶段。</p><p data-pi="35">是啊。感觉还有很多社交层面的机会，其实我们还没怎么看到。</p><p data-pi="36">我很好奇 Anthropic 接下来有什么计划。你们在代码方面已经做了很多，也在思考企业市场，可能还有新模型要发布。无论能分享什么，我们都很想听听。然后在他回答的同时，接下来我们会进入观众提问环节。所以大家可以开始想想其他人可能会问什么，我们随后就进入那个环节。</p><p data-pi="37">是的，我认为对我们而言，无论是在模型还是产品层面，“agent”这个词——你看，就像 David 和 Robo 他们关注的方向那样——都是当下很多人最关心的事。我们希望能尽可能地为这类用例提供支持。编程是我眼中的第一个例子，它体现了一个更广泛的议题：模型能否一次连续工作数小时？就像之前 Meta 的那张图表所示。我不会说这就是我们的路线图，但这确实是我们的目标——模型能否更长时间地自主运行？为此它们需要记忆功能，需要高级工具使用能力，需要在组织层面完成自我接入。</p><p data-pi="38">这不再仅仅关乎模型本身，还包括围绕它构建的一整套配套体系：结果是否可验证？当公司里有上百个 agent 同时运作，而非只有一个时，logging 应该是什么样的？我不认为我们会覆盖这整个技术栈的每个环节，但希望我们能通过模型和一些基础模块来促成其中的很大一部分。</p><p data-pi="39">很好。你们很快会有新模型发布吗？很快，也许很快。我们总有新模型即将发布。我很期待看到它们。我的意思是，这挺搞笑的，人们会说“哦，Claude 3.7 仍然是最受欢迎的 Cursor 模型”，而它已经很老了。我就想说，兄弟，我们今年二月才发布的。这个节奏太疯狂了。我们很快会有一些很酷的东西，我很期待。</p></section><section class="chunk"><p data-pi="40">现场观众有问题吗？Daria，你后面也有一位。这是个滑稽的大号麦克风。我喜欢，它可以扔来扔去。等等，现在到我了。它可以扔来扔去，我们需要这个。是你后面那位还是我来？好，我来。你是做产品的，从产品角度，什么让你夜不能寐？你现在面临的最难的产品问题是什么？</p><p data-pi="41">我还是代表我们的产品来说吧，但我觉得这具有普遍性。对大多数初次接触的人来说，这些产品确实很难有效使用。我们会构建一些有用的东西，它们会形成不错的工作流，但现在还是太像“如果你使用的方式完全正确，就能获得惊人的结果”，但只要稍微偏离正轨，或者如果你没有那种洞察力——比如，把数据这样接进来，或者知道该做哪些工作流——那种感觉就很……我们离那种体验还很远。就像你第一次打开 Instagram，你就知道该做什么：拍张照片。我们现在完全不是那种体验。部分原因是它更偏向工作场景，而不是纯粹的私人使用场景导向。但这让我夜不能寐：以模型今天的能力，它们对人们的有用性还有巨大的潜力未被释放。</p><p data-pi="42">那么，《AI 2027》预测了某种未来，你的世界观与此相符还是不同？事情会往哪里发展？总的来说，你对那篇文章有什么评论？</p><p data-pi="43">我想大概有两点看法。第一，算力的重要性——这不是什么新颖或特别深刻的观点，但我猜这是 OpenAI 的首要话题之一，在 Anthropic 也是如此。我们当前的算力情况如何？下一代算力是什么样的？我们与谁合作？等等。所以对算力的强调以及其中的数字，总体而言方向上是相当正确的。我觉得这很有意思。</p><p data-pi="44">第二，我认为最有趣的开放性问题——也是最大的未知——是：是否会因为模型在内部更有用，就将其扣下不发布。我刚看到 Mark Zuckerberg 本周接受 Stratechery 采访，他在谈为 Llama 提供 API，以及由此带来的算力使用上的权衡。这种对话在每个实验室都在发生，对吧？你是把额外时间花在 RL 上，还是花在一个客户用例上，还是花在你的下一次 pre-train 上？相对算力的分配将变得极其重要。</p><p data-pi="45">然后到了某个节点你会想：哇，如果我们有一个非常大的产品，需要大量 inference，利润很高，也很有用，但它直接从研究产能中抢走了时间。而这甚至不是为了已知实验的研究，而是为了那些两个人在房间里想出来的疯狂点子——关于如何 scaling 的新奇想法，可能成为下一个 test-time compute。</p><p data-pi="46">所以，这一点与我们的情况非常吻合。而且这将是一个迷人的自然实验：比如 Ilya 的 SSI 从一开始就不做商业化，他们会不会因此占据优势，可以把所有算力都投入训练？我不知道。我觉得我们从将模型投放到现实世界中已经学到了很多。如果没有市场反馈和看到真实用例，我们不会以现在这种方式构建 Claude 3.7 Sonnet。我非常相信要在市场上有一个产品。所以，“扣下模型不发布”可能是最不可能成真的剧本，但未来几年观察这一点会很有意思。</p><p data-pi="47">我很好奇，在一个庞大的研究加产品体系中，你如何平衡？你可以想象一种情况：产品定义了研究的方向，一切垂直整合，也许那是最好的产品体验；而研究则只想做出最聪明的模型来推动前沿，然后产品拿到什么就用什么、设法凑合。你怎么看待这个问题？</p><p data-pi="48">是的，这是个很好的问题。我会推动我们的产品团队，并与研究部门协同，去做这样的事情：如果我们发布的东西，完全可以只基于我们的 API 就能构建出来，而且在最初版本上也没有以其他方式做到更好，那我们到底在干什么？要知道，我们另一边有那些了不起的研究人员。我得说，Artifacts 可能是最好的例子——那是针对模型做了 fine-tuned 的，很有用等等。但我觉得曾经有一段时间，我们在这类事情上做得不够多。</p><p data-pi="49">现在我认为我们正回归正轨：在 Anthropic，一个完全成熟的产品小组应该包括 applied AI，应该包括我们 Claude Skills 团队的人——那基本上就是我们的 fine-tuning 团队——才能真正把事情做成。但这可能仍然只占研究团队所做工作的 10% 左右。然后希望他们在做的其他事情也普遍有用，比如更好的 instruction following 就很有用，因为这样我们总体上就能做更多事。</p></section><section class="chunk"><p data-pi="50">不过，我一直对 OpenAI 的做法很感兴趣：你们有一个 ChatGPT 模型也在 API 里，可能没多少人是通过 API 使用它的，但它就在那里。我在想，我们是否也应该有一个更经过 fine-tuned 的、更偏向产品导向的版本。到目前为止我们没这么做也还行，这主要是出于节省算力的考虑，但这可能实际上限制了我们去做一些更具差异化的产品体验。</p><p data-pi="51">谢谢你抽出时间。</p><p data-pi="52">我很好奇你如何看待——我们听到 Sam 谈到要成为覆盖所有 AI 事物的单一订阅服务，融入生活的方方面面，成为一站式平台。你如何看待 Anthropic 相对于这一定位的位置？具体来说，我来自这样一个领域：我在 Windsurf 工作，我们大量消耗 Anthropic 的 token，但我也把 ChatGPT 当作我的主力应用。那么你在思考产品策略时，是否对二者做了区分？长期来看，你认为它们是趋向融合还是分化？</p><p data-pi="53">这是我经常思考的问题。我们发现，至少在产品演进的这个阶段，很多人愿意跨产品使用，或者同时为多个产品付费，对吧？而且我敢肯定你们也观察到了这一点——它们不是互相替代的，对吧？人们会愿意为 Windsurf 付费，但也可能仍然订阅 Claude 或 ChatGPT，以便获得其他功能，对吧？或者适配不同的工作流。我认为这在短中期是可持续的，而长期来看，可能会有更强的整合需求，或者我们最终会走向某种——这么说可能有点反乌托邦——某种类似 cable bundle 的模式，也就是把这些服务打包在一起。</p><p data-pi="54">你大概能为 AI 的 cable bundle 想一个更性感的名字，但方向上可能差不多。然后还有一类重度用户，对他们来说，跨产品使用本身就有价值。比如我们推出了 Claude Max，而用户最迫切的需求就是：我能把这个额度用在 Claude Code 的 token 上吗？所以我们昨天推出了这个功能，因为这似乎是一种自然的演进——没错，如果你每月为 Claude 支付 200 美元，你很可能无法全部在 Claude AI 里消耗完，这时候打包套餐就开始有用了。</p><p data-pi="55">我觉得 ChatGPT Plus 作为最高 tier 的做法很有意思，对吧？就是你可以把额度用在视频生成上，也可以用在编程场景等等。我认为这至少让人感觉很有价值。我们一直在思考的一个产品想法是：也许让用户能把 token 带到其他产品里也会很有用。特别是如果你正在 bootstrap 一款产品，可能还没准备好让用户每月支付 20 到 200 美元，但他们已经在别的地方每月支付 200 美元了，那这或许能成为他们直接上手的一条路径。</p><p data-pi="56">Hi Mike，感谢你来参加。你如何看待 agent 与 agent 之间的新标准会随时间如何发展？我们应该期待 Anthropic 推出某种新标准吗？</p><p data-pi="57">是的，我们内部有很多 agent 互相交流的奇思妙想的原型，我认为这将帮助我们明确应该在底层设置哪些正确的 primitives。从研究角度来看，有一个我认为还没人解决的问题——至少我在公开领域没看到——这个问题将非常重要，尤其是当 agent 开始成为你或你公司在外的化身时：那就是更好地判断该透露什么、该参与什么，对吧？比如你在和供应商交易时，当然可以透露信用卡信息；但如果只是和某个随机的 agent 对话，大概就不行，对吧？</p><p data-pi="58">如果是公司对公司，什么信息该透露，什么该保留？这既是一个协议问题，但我认为实际上也是一个研究问题——模型有时很想迎合你，所以会倾向于告诉你信息；但如果我们要求它“绝不透露任何公司信息”，它又会变得过于抗拒。所以这种细微差别和判断能力感觉还没被解决。另一个我之前提到的是，规模化的 auditability 将会非常有趣。同样，我认为会有产品建立在这个需求之上。我上周和一位创始人聊到，agent 的身份管理应该是什么样的？</p><p data-pi="59">它们需要有名字吗？我不知道，这感觉有点过于拟人化了，但也许有用。不过感觉 agent 首先应该更擅长完成第一百项任务，而这意味着某种 longitudinal memory，对吧？而且会有那种更像你工作延伸的 agent，也会有那种完全像另一名员工的 agent。所以我认为这些不太像协议问题，更像是产品和研究问题。</p></section><section class="chunk"><p data-pi="60">Hi Mike，感谢你的时间。你认为大多数做应用层的人错在哪里？</p><p data-pi="61">说不上是“错”，但我观察到的一点是：那些从轻量使用 AI 转向重度使用 AI 的产品，往往把 AI 放在侧边栏之类的地方，最终感觉像是一个次要的界面。然后特别是当你越来越往 agent 化方向发展时，你就越来越难让它变得像你希望的那样功能完备。所以这是一个问题：在什么时候你需要重新思考产品的核心构建模块，让它真正成为 AI-native 的？这是第一点。另一点是，令人惊讶的是，大量所谓的 AI-native 产品并没有把应用的 primitives 充分暴露给模型。</p><p data-pi="62">我的意思是，你问它做某事，它却说：“哦，抱歉 Dave，我做不到”，因为产品压根不是那样构建的。也许这两点是有联系的——当你先做了一个 GUI，然后又在上面嫁接了一个模型时，你不一定会想到，在很多方面，那个模型其实应该是你应用的主要用户。</p><p data-pi="63">好的 Mike，非常感谢你加入我们。</p><p data-pi="64">是的，谢谢大家。</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="AI 产品开发"># AI 产品开发</button><button class="tag" data-tag="智能体交互"># 智能体交互</button><button class="tag" data-tag="Artifacts"># Artifacts</button><button class="tag" data-tag="组织变革"># 组织变革</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

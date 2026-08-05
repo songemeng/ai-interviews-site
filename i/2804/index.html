@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>【财经面对面】以智能体破局，解锁AI生产力新范式——专访360集团创始人周鸿祎 - AI 访谈库</title>
+  <meta name="description" content="新华财经专访周鸿祎：智能体是AI下半场答案，&#39;All in Agent&#39;战略始末，训练算力与推理算力之辨，以及2026年&#39;百亿智能体&#39;时代的判断。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/2804/" />
+  <meta property="og:title" content="【财经面对面】以智能体破局，解锁AI生产力新范式——专访360集团创始人周鸿祎" />
+  <meta property="og:description" content="新华财经专访周鸿祎：智能体是AI下半场答案，&#39;All in Agent&#39;战略始末，训练算力与推理算力之辨，以及2026年&#39;百亿智能体&#39;时代的判断。" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">【财经面对面】以智能体破局，解锁AI生产力新范式——专访360集团创始人周鸿祎</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">周鸿祎 · 360</div>
+      <h1 class="r-title">【财经面对面】以智能体破局，解锁AI生产力新范式——专访360集团创始人周鸿祎</h1>
+      
+      <div class="r-meta">2026-05-23 · 新华财经·财经面对面 · 约 3 分钟读完 · <a class="r-src" href="https://m.cnfin.com/hg-lb//zixun/20260523/4416595_1.html" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">新华财经专访周鸿祎：智能体是AI下半场答案，&#39;All in Agent&#39;战略始末，训练算力与推理算力之辨，以及2026年&#39;百亿智能体&#39;时代的判断。</div>
+    </header>
+    
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">新华财经北京5月23日电 2025年初，DeepSeek-R1推理模型正式发布并开源，短短几日收获上亿用户，也为很多人做了一次普及：什么是AI大模型。然而，大模型就是人工智能的全部吗？怎么让大模型“能干活”？</p><p data-pi="1">360集团创始人周鸿祎日前接受新华财经专访时表示，智能体就是这个答案。他认为，智能体发展已成为AI发展的下半场，将与大模型发展双线并行、共同推动新质生产力发展，也将为新兴产业、未来产业发展带来支撑。</p><p data-pi="2">“All in Agent”战略</p><p data-pi="3">周鸿祎把2025年称为“智能体元年”，认为AI的焦点已在这一年从大模型转向智能体。同年，他提出了“All in Agent”（360智能体战略），宣布将360所有资源都投入到智能体研发。</p><p data-pi="4">“智能体时代，我们做的第一个准备是认知准备，认知将决定企业的发展战略。”周鸿祎说，“早期，很多人认为智能体就是大模型的套壳。随着智能体的进化和发展，大家现在越来越认同我的一个观点，即通用人工智能AGI的发展需要大模型、智能体双线并行。”他用最近业内热议的Harness理论来佐证这一观点。Harness理论认为，大模型能力并不会自动转化为真实场景中的执行能力。模型能否完成复杂任务，取决于围绕模型构建的智能体系统与运行框架，包括工具调用、任务编排、记忆管理、反馈验证和安全约束等能力。“甚至可以这么说，一个70分的大模型，有了智能体的帮助，可以和90分的大模型能力相当。”</p><p data-pi="5">借鉴自动驾驶的分级体系，周鸿祎将智能体划分为五个能力层级：“L1级智能体只会聊天，L2级智能体能用程序代码按照固定工作流来执行、偶尔调动大模型，L3级智能体能通过大模型做推理、调用各种工具，L4级智能体即‘蜂群智能体’具备分工协作、完成复杂任务的能力，L5级智能体增加了记忆、自我学习、自我进化等能力如‘龙虾’智能体。”他说，2024年，360就打造了智能体工厂；2025年，360就具备了搭建L3、L4级智能体的能力。</p><p data-pi="6">“以算力对抗算力，以算法对抗算法。”</p><p data-pi="7">“‘龙虾’大热又引出智能体的安全问题。”周鸿祎说，“去年，我们发现国外已在研究用智能体自动挖掘漏洞、自动发动网络攻击。网络攻防本来是人跟人的对抗，但如果把高级黑客的能力蒸馏出来赋予智能体，就等同把一个黑客变成1千个黑客智能体、甚至1万个黑客智能体，形成一种饱和式攻击。人力很难对抗算力，所以360开发了安全运营的智能体，以算力对抗算力、以算法对抗算法。”</p><p data-pi="8">任何一枚硬币都有它的两面。带着AI实现超级人工智能的希冀，周鸿祎认为我们要有解决智能体安全问题的信心。他说，360花了两年多时间，训练出自己的安全大模型，还把很多挖漏洞高级专家的工具和技能蒸馏给智能体，实现使用智能体的另一条技术路线，即自动扫描代码、自动发现漏洞。截至目前，360已发现上千个漏洞。“360以安全起家，我们最大的优势就是挖漏洞、发现和抵御攻击。这几年，360通过自己做大模型、做智能体，积累了丰富的AI能力。我们现在要把解决AI安全问题和用智能体赋能传统安全的两种能力结合起来。”</p><p data-pi="9">“六力”模型良性传导、推动新质生产力发展</p></section><section class="chunk chunk-eager"><p data-pi="10">周鸿祎提出“六力”模型，即电力、算力、智力、人力、安全力、生产力，通过厘清AI相关概念，阐释我们在人工智能发展上的优势和短板。</p><p data-pi="11">他提到，算力分为训练算力和推理算力两种。训练算力是指训练大模型用的算力，成本较高。但“龙虾”需要的不是训练算力，而是推理算力，成本相对低廉。“在训练算力上我们是有短板的，而一旦‘战线’转到推理算力上，就不一定了。我们只要继续降低推理算力的成本、提高推理算力的总量，就会有非常大的发展优势。”</p><p data-pi="12">谈及其他几力，周鸿祎说：“未来，当智能体被大规模采用时，电力需求会大幅增长，我国在电力基建上非常有优势，包括绿电和储能。人力是指让业务骨干不是简单用AI做问答，还能编写、定义、打造、管理智能体，这绝对是一个大的挑战。”他说，在“六力”转化链条中，智能体是将通用大模型的算力转化为“能干活”的专用智力的关键枢纽。同时，当智能体能直接操纵企业内部业务系统、各个机器人等设备时，安全力就变得非常重要。“六力”模型良性传导最终推动新质生产力发展，形成我们的竞争优势。</p><p data-pi="13">智能体发展尚处早期阶段，如何平衡产业发展中创新和监管的关系？周鸿祎给出三点建议，“首先，我们国家的智能体应用场景是最丰富的、工业门类是最齐全的，有利于将劣势转化为优势；其次，要鼓励像360这样的企业靠技术去解决智能体的不安全问题；第三，要鼓励学术界和科研界去探索智能体的能力上限。”但他也强调一点，企业应先在安全可控的环节使用智能体，而不是在最敏感的核心区域率先布局。</p><p data-pi="14">“我们想看一看，智能体到底该如何在企业真正落地。”</p><p data-pi="15">智能体到底该如何在企业真正落地？周鸿祎坦言，这也是他最近感到困惑的一个问题。对于传统企业来说，如果组织架构不变，认知还停留在提高工具使用效率、推动流程加速上，布局智能体能否实际提升其组织效率？</p><p data-pi="16">但是，周鸿祎还是决定继续尝试。360集团有几千名员工，他给每人发了一个“龙虾”智能体、一亿个Token（词元）,要求各部门、各团队用起来，在这个过程中，要把在企业里大规模推广智能体的路子探索出来。</p><p data-pi="17">关于智能体的未来，周鸿祎给出了更广阔的想象空间。“未来，智能体不仅在企业里帮你干活，还能在互联网上帮你寻找信息，互联网大部分的流量可能不是人类产生的，还有可能是智能体产生的。智能体和智能体天天在互联网上集思广益，由此萌发新的智力跃迁。”“机器人现在是没有大脑的，但当它内部有了智能体，能够理解指令，并把指令分解为简单步骤时，就能为我们提供养老、照看等服务。有了智能体的发展，具身智能才有可能真正走进我们的生活。”</p><p data-pi="18">周鸿祎说：“我们幻想的关于人工智能的所有美好未来，不仅要通过大模型来实现，还要通过智能体发展来实现。”</p><p data-pi="19">策划：郝菁</p></section><section class="chunk"><p data-pi="20">记者：高婷</p><p data-pi="21">制作：王钊、李振北</p><p data-pi="22">编辑：胡晨曦</p><p data-pi="23">中国经济信息社出品</p><p data-pi="24">声明：新华财经（中国金融信息网）为新华社承建的国家金融信息平台。任何情况下，本平台所发布的信息均不构成投资建议。如有问题，请联系客服：400-6123115</p><p data-pi="25">去新华财经APP看全文</p></section></div>
+    </article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>物理图灵测试：Jim Fan 讲 NVIDIA 具身智能路线图（红杉 AI Ascent 2025） - AI 访谈库</title>
+  <meta name="description" content="Jim Fan 提出&#39;物理图灵测试&#39;——你回家看到打扫一新的房间和烛光晚餐，却分不清是人还是机器所为，并给出从数字孪生、数字表亲到视频扩散模型&#39;数字游民&#39;的仿真规模化路线。他的终局愿景是&#39;物理 API&#39;：像 LLM 操纵比特一样，让软件直接操纵原子。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/496/" />
+  <meta property="og:title" content="物理图灵测试：Jim Fan 讲 NVIDIA 具身智能路线图（红杉 AI Ascent 2025）" />
+  <meta property="og:description" content="Jim Fan 提出&#39;物理图灵测试&#39;——你回家看到打扫一新的房间和烛光晚餐，却分不清是人还是机器所为，并给出从数字孪生、数字表亲到视频扩散模型&#39;数字游民&#39;的仿真规模化路线。他的终局愿景是&#39;物理 API&#39;：像 LLM 操纵比特一样，让软件直接操纵原子。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/yt-_2NijXqBESI.jpg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">物理图灵测试：Jim Fan 讲 NVIDIA 具身智能路线图（红杉 AI Ascent 2025）</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Jim Fan · NVIDIA AI 总监、GEAR 实验室联合负责人</div>
+      <h1 class="r-title">物理图灵测试：Jim Fan 讲 NVIDIA 具身智能路线图（红杉 AI Ascent 2025）</h1>
+      <p class="r-title-en">The Physical Turing Test: Jim Fan on Nvidia&#39;s Roadmap for Embodied AI (Sequoia AI Ascent 2025)</p>
+      <div class="r-meta">2025-05-07 · Sequoia AI Ascent 2025 · 18m · 约 15 分钟读完 · <a class="r-src" href="https://www.youtube.com/watch?v=_2NijXqBESI" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">Jim Fan 提出&#39;物理图灵测试&#39;——你回家看到打扫一新的房间和烛光晚餐，却分不清是人还是机器所为，并给出从数字孪生、数字表亲到视频扩散模型&#39;数字游民&#39;的仿真规模化路线。他的终局愿景是&#39;物理 API&#39;：像 LLM 操纵比特一样，让软件直接操纵原子。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/yt-_2NijXqBESI.jpg" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">接下来有请 Jim Fan。你们都认识他。上来吧，Jim。Jensen 今天早上还刚提到他。他不仅是 NVIDIA 的 AI 总监，也是杰出研究科学家，今天他将和我们聊聊 physical AI。</p><p data-pi="1">那么，几天前我看到一篇博客文章，标题吸引了我的注意：&quot;我们通过了图灵测试，却没人注意到。&quot; 要知道，图灵测试曾经是神圣的，对吧？它是计算机科学的圣杯，对吧？核心理念是，你无法分辨一段对话来自人类还是机器。然后我们就这样不知不觉地抵达了那个节点。我们刚到那儿。而你们呢，会因为 O3 Mini 多花了几秒钟思考，或者 Claude 没法调试你那烂糟糟的代码而生气，对吧？接着我们把每一个 LM 的突破都轻描淡写地当作又一个普通的周二。在座的各位是最难被打动的一群人。</p><p data-pi="2">所以我想提出一个非常简单的东西，叫做 physical Turing test。概念是这样的：你在周日晚上办了一场黑客松派对，结果现场一团糟。你的伴侣冲你大吼，你心想：&quot;该死。周一早上，我想叫人来收拾这堆烂摊子，再准备一顿非常棒的烛光晚餐，好让我的伴侣开心起来。&quot;然后你回到家，看到这一切，却无法分辨这是人类干的，还是机器干的。对吧？足够简单。Physical Turing test。</p><p data-pi="3">但我们现在进展如何？接近了吗？来看看这个 cumul robot 准备去上班。它没成功，对吧？那我们的机器狗和香蕉皮呢？啊，是啊。还有那个机器人， instructed to 给你做早餐麦片。它确实准确识别出了牛奶。我给它打个减分，对吧？用心良苦。哦，它还会用勺子喂你。这是 VIP 待遇，对吧？看啊，我都嫉妒了，没人用勺子喂我。没错，这就是我们现在所处的阶段。</p><p data-pi="4">那为什么解决 physical Turing test 就这么难呢？你们知道 LM 研究员抱怨很多，对吧？他们抱怨得可多了。最近有个叫 Ilia 的家伙就抱怨说，LM 的预训练正在耗尽数据。他甚至把互联网称为 AI 的化石燃料。他说我们快没数据来训练 LM 了。好吧，只要和机器人学家待上一天，你就会知道 LM 研究员有多娇生惯养了。我们连化石燃料都没有。</p><p data-pi="5">这是在 NVIDIA 总部进行的一次数据采集。NVIDIA 里有一家咖啡馆，我们在那里布置了这些人形机器人，操作它们并采集数据。数据长这样：机器人的关节控制信号。它们是随时间变化的连续数值。你无法从互联网上爬取这些数据。你在 Wikipedia、YouTube、Reddit 或任何地方都找不到。所以你必须自己采集。</p><p data-pi="6">那我们怎么采集呢？我们有一种非常精密、但也非常昂贵的方式，叫做 teleoperation。你可以让人戴上类似 VR 头显的设备，它识别你的手部姿态并实时传输给机器人。通过这种方式，你可以教机器人做事，比如从烤面包机里取出面包，然后淋上蜂蜜。但你可以想象，这是一个非常缓慢且痛苦的过程，对吧？</p><p data-pi="7">所以如果你把它放在 scaling 的坐标图上，它基本上完全不 scale。真实的机器人数据是 human fuel。它比化石燃料还糟。你在燃烧 human fuel。更糟的是，每个机器人每天最多只有 24 小时。实际上你能得到的远比这少，因为人会累，而机器人比人更容易累。这就是你面临的现状，那该怎么办，对吧？如何打破这个瓶颈？机器人领域的核能在哪里？我们必须有清洁能源。不能永远依赖化石燃料。</p><p data-pi="8">好吧，让我们进入 simulation。我们必须离开物理世界，在 simulation 里做点事情。所以我们训练了一只机械手，在 simulation 中完成超人类的灵巧任务，比如转笔。对我来说这是超人类的，因为我不会转笔，我很久以前小时候就放弃了。我很高兴我的机器人至少在 simulation 里能做得比我好。</p><p data-pi="9">那我们是怎么训练机械手完成如此精细的任务的？有两个思路。第一，你必须以比实时快 10,000 倍的速度进行 simulate。也就是说，你要在单个 GPU 上并行运行 10,000 个环境，进行物理 simulation。这是第一点。第二，这 10,000 个环境副本不能完全相同。你必须改变一些参数，比如重力、摩擦力和重量。我们称之为 domain randomization。这就给了我们 simulation principle，对吧？它为什么有效？</p></section><section class="chunk chunk-eager"><p data-pi="10">想象一下，如果一个神经网络能够控制机器人解决一百万个不同的世界，那么它很可能也能解决第一百万零一个世界——也就是我们的物理现实。换句话说，我们的物理世界处于这次训练的分布之内。那么我们如何应用它呢？你可以构建一个 digital twin，也就是机器人和世界的一对一复制品，然后在 simulation 中训练，再直接迁移到真实世界中测试，对吧？zero-shot。可以用手来做，而这是我们能做到的最令人印象深刻的任务之一。</p><p data-pi="11">基本上，你有一只机器狗站在球上，然后我们把它迁移到现实世界。这是在 UPenn，基本上有人在遛机器狗。我们的研究员看起来超级诡异，就像《黑镜》的某一集。这实际上叫做 Dr. Eureka，我们有个研究员让他的真狗试了一下瑜伽球。至少我们现在有了超级狗的灵巧度，对吧？是啊，真狗可做不到这个。</p><p data-pi="12">接下来我们还可以把它应用到更复杂的机器人上，比如人形机器人。这些人形机器人在仅两小时的 simulation 时间里经历了相当于十年的训练来学习走路，然后你可以直接迁移。而且无论 embodiment 是什么，只要你有机器人模型，在 simulation 中训练，就能实现行走。那我们能不能做的不只是走路呢？</p><p data-pi="13">在控制我们身体的时候，你可以追踪任何你想要的姿态，追踪任何关键点，跟随任何你想要的速度向量。这被称为人形机器人的 whole body control 问题，它非常困难，但我们可以直接在并行运行的 10,000 个 simulation 中训练它，然后以 zero-shot 的方式、无需任何微调迁移到真实机器人上。</p><p data-pi="14">这是在 NVIDIA 实验室。我们其实需要把视频放慢。第一段视频是实时的，第二段是慢放的。这样你就能看到它动作的精妙之处。它在保持平衡的同时模仿人类做出各种敏捷动作。各位，完成这一切所需的神经网络有多大？150 万个参数，不是十亿。150 万个参数就足以捕捉人体潜意识层面的处理过程。system-wide 的推理，150 万个参数就够了。</p><p data-pi="15">所以如果我们把它放在一张速度 versus simulation diversity 的图表上，我想我们可以把这称为 simulation 1.0，也就是 digital twin 范式。它基于经典的 vectorized physics engine，你可以把它跑到每秒 10,000 帧甚至 100 万帧。但问题在于，你必须先构建一个 digital twin。你需要有人去构建机器人、构建环境以及所有东西，对吧？这非常繁琐，而且依赖手工。</p><p data-pi="16">那么，我们能不能开始生成 simulation 的某些部分呢？所有这些 3D 资产都由 3D 生成模型生成。所有这些纹理来自 Stable Diffusion 或任何你喜欢的 diffusion 模型。所有这些布局由 PR 和 LM 生成 XML 来创建。把所有这些结合起来，我们构建了一个名为 Roboccasta 的框架，它是一个大规模 simulation，一个日常任务的组合式 simulation。而这里的一切，除了机器人本身，一切都是生成的。</p><p data-pi="17">你可以组合出不同的场景，但它仍然依赖传统引擎来运行，不过你已经能从中完成很多任务了。所以现在我们能做的是，再次让人类来进行遥操作，但这一次是在仿真环境中进行。你不是对真实机器人做遥操作，而是在仿真环境中做。你在仿真中回放那条轨迹，并加入所有强大的硬件加速光线追踪，来渲染这些带有光照效果的精美场景。你甚至可以改变动作，对吧？如果你通过遥操作把杯子从这里移到那里，你就不需要再演示把杯子从这儿移到那儿，或者从另一个位置移到另一个位置。</p><p data-pi="18">然后，把这些全部结合起来，通过环境生成，你在仿真中拥有一个人类演示，就可以将其倍增到 n 个；而对于动作生成，则是 m 乘 n。我向你保证，这是你今天唯一要做的数学。我们就是这样来倍增数据的。然后你把它们放在一起：第一列和第三列是我们真实机器人的真实视频，第二列到第四列则全部来自 roboc 仿真生成。所以你仍能看出这些纹理并非真实，但它们已经足够接近了。我们把这种足够接近的东西称作什么呢？我们称之为 digital cousin 范式。</p><p data-pi="19">它不是 digital twin，但某种程度上抓住了精髓。digital cousin 这些仿真运行起来更慢，但我们有一种混合式的生成物理引擎，我们生成其中的一部分，然后把剩余部分交给传统图形管线处理。现在来模拟这个场景，对吧？你有软体、流体，什么都有。艺术家或图形工程师要正确模拟这个场景，得花很长时间。所以如果我们看看图形学的发展，从左到右花了 30 年；而视频生成模型只用了一年就从左到右，模拟所有可形变的面条，对吧？</p></section><section class="chunk"><p data-pi="20">这里少了一些幽默感，但为了最新的 Sora VO，这个代价我愿意付，对吧？这些生成式模型只用了一年。这就是 scaling law 和数据驱动流程的力量。还记得我一开始给你们看的那个视频吗？我骗了你们。这个视频里没有一个是真实的像素，它完全由定制模型生成。我们所做的是，拿一个通用的开源、最先进的视频生成模型，然后在我们真实机器人实验室采集的领域数据上进行微调，而所有这些都是生成的。现在你可以提示这个模型去想象不同的未来，对吧？</p><p data-pi="21">去模拟反事实场景。你看这两帧是完全一样的，但给定不同的语言指令，生成的视频实际上会遵循语言并做出正确的动作，即便这个动作在现实世界中从未发生过。然后你还能这样做：video diffusion model 不在乎场景有多复杂，对吧？它不在乎是否有流体或软体，而且在同一个场景中，你可以让它捡起不同的东西。它真的会使用右手抓住物体并放进篮子里。而这些都是生成的，全部都是生成的，没有一个是真实的像素。它把这些反射效果都做对了。</p><p data-pi="22">嗯，所有这些交互都做对了。而我最喜欢的一个是那边机器人在弹尤克里里。基本上，video diffusion model 可能看过数亿个人类——很多很多人弹尤克里里的视频，然后它就模拟机器人的手指来做这个动作。即便硬件实际上并不支持，视频生成模型也能做到。所以如果我们把这个放在更大的图景中来看，对吧，这就是 Simulation 2.0，它拥有极大的多样性，但目前运行得相当慢。虽然没人这么叫，但我把它称为 digital nomad，它漫游进入梦境空间——我们的 video diffusion model。</p><p data-pi="23">那什么是 video diffusion model 呢？它是数亿个互联网视频被压缩成的一种多元宇宙仿真。所以就像 Doctor Strange 一样，对吧？你在梦境空间中实例化机器人，然后机器人基本上就能与无处不在的物体互动——瞬息全宇宙。所以你拥有了这种具身 scaling law。嗯，好吧。Jensen 离开了，但我想他会非常喜欢这个的，对吧？你需要大量算力来扩展传统仿真，这就是 Sim 1.</p><p data-pi="24">x 系列。问题在于，当你扩展它时，会遇到瓶颈，因为在这个手工打造的系统中，多样性是有限的。而这就是 neural world models，Sim 2.0，它将随着算力呈指数级扩展。到了这个阶段，神经网络会超越传统图形工程师。这两者结合在一起，将成为我们扩展下一代机器人系统的核动力。嗯，你买得越多，你说得越多，省得越多。所以在开头，无论谁说算力情况会好转而不是恶化，都请把这个数字刻进视网膜里，然后再想想。</p><p data-pi="25">然后你把所有这些数据输入到我们所谓的 visual language action model 中，它接收像素和指令，输出运动控制；然后你就能得到我们在三月 GTC Jensen 主题演讲中开源的 Groot N1 模型。我们把它跑在机器人上，你知道，它有时候还挺浪漫的。嗯，是啊，你无法想象我们在训练期间做了多少清洁工作。所以是的，它能抓住香槟，在这个演示里它完成得很完美。是的，它们表现很好。然后它还能做一些工业任务，捡起一些工厂里的物体，还能做多机器人协同。</p><p data-pi="26">所以 Groot N1 是完全开源的，而且未来系列的模型也会开源，因为我们在遵循 Jensen 的开源范式，让 physical AI 民主化。很好。那么下一步是什么？在我们解决了 physical AI 之后，该往哪里走？我要说，下一个是 physical API。你知道，纵观人类历史，5000 年来，我们有了好得多的工具，对吧？社会总体上也好得多，但我们做饭和做很多手工劳动的方式，从埃及时期起就仍然差不多，对吧？</p><p data-pi="27">也许在 99% 的人类历史中，我们都有这样的结构：通过人类劳动将原材料转化为文明。而在最后的 1%，或者说大约 50 年里，人类劳动在减少，我们有了这些高度专业化、高度复杂的机器人系统，它们一次只能做一件事。编程成本非常高，但它们仍然存在于我们的社会中。这就是我们现在拥有的。而未来就是把那根蓝色条推到到处都是，推到那边去，然后拥有 physical API，对吧？就像 LLM API 移动数字比特块一样，physical API 移动的是原子块。</p><p data-pi="28">你基本上给了你的软件一个物理执行器去改变物理世界，对吧？在这个 physical API 之上，将会出现一种新的经济、一种新的范式，在那里你有 physical prompting，对吧？你如何给这些机器人下达指令？如何教它们？语言有时候是不够的。你可以拥有物理应用商店和技能经济。比如说，米其林厨师不需要每天都去厨房。他可以教一个机器人，然后基本上把米其林晚餐作为一项服务交付出去。这里我要再次引用 Jensen 的话：未来，一切会动的都将是自主的。</p><p data-pi="29">总有一天，你回家时会看到干净的沙发、烛光晚餐，你的伴侣对着你微笑，而不是因为你没洗脏衣服对你大吼大叫。这仍然每天激励着我，对吧？而且，你上个月买了两台人形机器人。它们运行着 Groot N7，而这些机器人会淡出背景，对吧？有点像一种 ambient intelligence。</p></section><section class="chunk"><p data-pi="30">它会淡出背景，你甚至不会注意到我们通过物理图灵测试的那一刻，而那一天只会被当作又一个平凡的周二而铭记。谢谢。</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="物理图灵测试"># 物理图灵测试</button><button class="tag" data-tag="具身智能"># 具身智能</button><button class="tag" data-tag="机器人仿真"># 机器人仿真</button><button class="tag" data-tag="世界模型"># 世界模型</button><button class="tag" data-tag="物理 API"># 物理 API</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Tulsee Doshi 谈 Gemini 3、Deep Think 的意外用途与图层编辑 - AI 访谈库</title>
+  <meta name="description" content="谈真实用户使用如何反过来重塑 Google 的模型路线图，覆盖 Gemini 3 推理突破、IMO 金牌经验与&#39;Gemini everywhere&#39;战略。最意外的信息：本为学术研究打造的 Deep Think 被用户发现最擅长创意写作，而 Nano Banana Pro 的图层编辑正是被用户呼声直接推上路线图的。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/395/" />
+  <meta property="og:title" content="Tulsee Doshi 谈 Gemini 3、Deep Think 的意外用途与图层编辑" />
+  <meta property="og:description" content="谈真实用户使用如何反过来重塑 Google 的模型路线图，覆盖 Gemini 3 推理突破、IMO 金牌经验与&#39;Gemini everywhere&#39;战略。最意外的信息：本为学术研究打造的 Deep Think 被用户发现最擅长创意写作，而 Nano Banana Pro 的图层编辑正是被用户呼声直接推上路线图的。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/og-395.jpg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">Tulsee Doshi 谈 Gemini 3、Deep Think 的意外用途与图层编辑</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Tulsee Doshi · Google DeepMind Gemini 模型产品负责人（高级总监）</div>
+      <h1 class="r-title">Tulsee Doshi 谈 Gemini 3、Deep Think 的意外用途与图层编辑</h1>
+      <p class="r-title-en">Google DeepMind&#39;s Tulsee Doshi: Gemini 3, Deep Think&#39;s Unexpected Uses, Layer-Based Editing</p>
+      <div class="r-meta">2026-01-17 · Jason Howell &amp; Jeff Jarvis · 37m · 约 3 分钟读完 · <a class="r-src" href="https://aiinside.show/episode/google-deepminds-tulsee-doshi-gemini-3-deep-thinks-unexpected-uses-layer-based-editing" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">谈真实用户使用如何反过来重塑 Google 的模型路线图，覆盖 Gemini 3 推理突破、IMO 金牌经验与&#39;Gemini everywhere&#39;战略。最意外的信息：本为学术研究打造的 Deep Think 被用户发现最擅长创意写作，而 Nano Banana Pro 的图层编辑正是被用户呼声直接推上路线图的。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/og-395.jpg" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">本期节目由 Your360 AI 赞助。在 Your360.ai 使用优惠码 INSIDE，可在 2026 年 1 月前享受 9 折优惠。</p><p data-pi="1">Tulsee Doshi 是 Google DeepMind 的 Gemini Models 高级总监兼产品负责人。她做客本节目，揭示真实世界的使用情况如何以意想不到的方式重塑 Google 的 AI 路线图。我们探讨了 Deep Think 不仅擅长学术研究、在创意写作方面也表现出众这一惊人发现；团队为何正基于用户需求为 Nano Banana Pro 开发图层化编辑功能；以及内部采用模式如何超出预期。我们还讨论了 Gemini 3 的推理突破、从研究到生产的路径，以及 Google 在国际数学奥林匹克竞赛中获得金牌表现的经验教训。点击播放，收听这期关于 AI 开发的坦诚对话。</p><p data-pi="2">注意：时间码可能因发行商的动态广告插入而发生变化。</p><p data-pi="3">00:01:32 - 介绍 Tulsee Doshi，Gemini Models 产品负责人</p><p data-pi="4">00:03:20 - Nano Banana Pro 发布：两个月后的意外收获与用户采用情况</p><p data-pi="5">00:04:17 - 用户的诉求：Nano Banana Pro 的未来方向</p><p data-pi="6">00:05:21 - 用户对 Photoshop 风格编辑和分层图像控制的需求</p><p data-pi="7">00:06:04 - Gemini 3 在 Google 各产品及更广泛领域的整合</p><p data-pi="8">00:08:23 - AI 会改变我们与 Google 产品的交互方式吗？</p><p data-pi="9">00:12:20 - 真实世界模型与 3D 空间理解的未来</p></section><section class="chunk chunk-eager"><p data-pi="10">00:27:36 - Deep Think 解析：何时使用不同的 Gemini 模式</p><p data-pi="11">00:28:41 - Deep Think 的应用场景：学术研究、企业应用与消费级应用</p><p data-pi="12">00:30:51 - 令人惊讶的 Deep Think 应用：超越学术研究的创意写作</p><p data-pi="13">00:31:45 - AI 生成电影与长视频内容的未来</p><p data-pi="14">00:32:00 - 感谢 Tulsee Doshi 做客 AI Inside 播客</p><p data-pi="15">GPT-5.6 突破限制并入侵了 Hugging Face  Apple 称 OpenAI 窃取其机密  中国可能对其最顶尖的 AI 模型实施封锁  RAMageddon 重塑科技格局（而且形势不容乐观）  Liz Reid 谈出版商对 AI 的认知误区  页面 首页 剧集 访谈 直播 商店 关注我们的播客 © 2025 Yellowgold Studios</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="Gemini 3"># Gemini 3</button><button class="tag" data-tag="Deep Think"># Deep Think</button><button class="tag" data-tag="Nano Banana Pro"># Nano Banana Pro</button><button class="tag" data-tag="IMO 金牌"># IMO 金牌</button><button class="tag" data-tag="用户反馈"># 用户反馈</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

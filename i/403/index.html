@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Google DeepMind 开发者：Nano Banana 是如何做出来的 - AI 访谈库</title>
+  <meta name="description" content="首席科学家 Oliver Wang 与产品负责人 Nicole Brichtova 完整还原 Nano Banana 从内部项目到病毒式现象的全过程，并展望图像与视频编辑的融合。看点是研究与产品双视角同场互补：同一个&#39;为什么爆红&#39;的问题，研究侧与产品侧给出的答案并不相同。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/403/" />
+  <meta property="og:title" content="Google DeepMind 开发者：Nano Banana 是如何做出来的" />
+  <meta property="og:description" content="首席科学家 Oliver Wang 与产品负责人 Nicole Brichtova 完整还原 Nano Banana 从内部项目到病毒式现象的全过程，并展望图像与视频编辑的融合。看点是研究与产品双视角同场互补：同一个&#39;为什么爆红&#39;的问题，研究侧与产品侧给出的答案并不相同。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/og-403.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">Google DeepMind 开发者：Nano Banana 是如何做出来的</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Oliver Wang · Google DeepMind 首席科学家（Nano Banana 研究负责人）</div>
+      <h1 class="r-title">Google DeepMind 开发者：Nano Banana 是如何做出来的</h1>
+      <p class="r-title-en">Google DeepMind Developers: How Nano Banana Was Made</p>
+      <div class="r-meta">2025-10-28 · The a16z Show · 54m · 约 7 分钟读完 · <a class="r-src" href="https://www.youtube.com/watch?v=I8VUN141MjU" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">首席科学家 Oliver Wang 与产品负责人 Nicole Brichtova 完整还原 Nano Banana 从内部项目到病毒式现象的全过程，并展望图像与视频编辑的融合。看点是研究与产品双视角同场互补：同一个&#39;为什么爆红&#39;的问题，研究侧与产品侧给出的答案并不相同。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/og-403.png" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">投资组合团队 重点领域 重点领域 AI American Dynamism 生物 + 健康 消费 加密 文化领导力基金 企业 金融科技 增长 基础设施 Perennial Speedrun 内容 内容 新闻与内容 新闻与内容 最新 增长 新 如何赢得 AI 的最大市场 Raghu Raghuram 与 Sarah Wang 增长 新 Travis 回来了 Ben Horowitz 与 Alex Danco 增长 新 打造十亿台智能机器 Marc Andreessen、Erik Torenberg 与 Elena Burger American Dynamism 新 硬件初创公司必须招对的 7 个关键招聘 Zabie Elmgren 通讯 播客网络 新媒体 书籍 项目 项目 a16z Build 大学人才 公司 公司 关于 职位 办公室 a16z 全球战略合作伙伴关系 Twitter Linkedin Facebook Instagram Youtube-alt Substack 关闭 基础设施</p><p data-pi="1">Google DeepMind 开发者：Nano Banana 是如何诞生的 Oliver Wang、Nicole Brichtova、Yoko Li 与 Guido Appenzeller 发布于 2025 年 10 月 28 日订阅 分享 分享 邮件 X LinkedIn Facebook Hacker News WhatsApp Flipboard Reddit 分享 分享 邮件 X LinkedIn Facebook Hacker News WhatsApp Flipboard Reddit</p><p data-pi="2">Google DeepMind 的新图像模型 Nano Banana 席卷了互联网。</p><p data-pi="3">在本期节目中，我们与首席科学家 Oliver Wang 和群组产品经理 Nicole Brichtova 坐下来，探讨 Nano Banana 是如何诞生的、它为何如此 viral，以及图像与视频编辑的未来。</p><p data-pi="4">Oliver Wang X 是 Google DeepMind 的首席科学家。</p><p data-pi="5">Nicole Brichtova X 是 Google DeepMind 的群组产品经理。</p><p data-pi="6">是 Andreessen Horowitz 的合伙人，关注领域包括开发者工具、基础设施、AI 和创意工具。</p><p data-pi="7">是 Andreessen Horowitz 的投资人，关注领域包括 AI、基础设施、开源技术和芯片。</p><p data-pi="8">The a16z Show 与技术领域的构建者们探讨最重要的理念。每一期节目都旨在让听众走在前沿，涵盖 AI、能源、基因组学、太空等话题。</p><p data-pi="9">分析和报道重塑 AI 与基础设施的最新趋势。</p></section><section class="chunk chunk-eager"><p data-pi="10">分析和报道重塑 AI 与基础设施的最新趋势。</p><p data-pi="11">分析和报道重塑 AI 与基础设施的最新趋势。</p><p data-pi="12">“posts”（包括播客、视频和社交媒体）中表达的观点均属于其中引用的 a16z 个别人员，不代表 a16z Capital Management, L.L.C.（“a16z”）或其各自关联公司的观点。a16z Capital Management 是在美国证券交易委员会注册的投资顾问。注册为投资顾问并不代表具备任何特殊技能或培训。这些 posts 并非面向任何投资者或潜在投资者，也不构成出售任何证券的要约，或购买任何证券要约的招揽，且不得用于或依赖以评估任何投资的优劣。</p><p data-pi="13">此处内容——以及可在任何相关分发平台和任何公开的 a16z 在线社交媒体账户、平台和网站上获取的内容（合称“内容分发渠道”）——不应被理解为或以任何方式依赖为投资、法律、税务或其他建议。对于任何投资相关的法律、商业、税务及其他相关事项，您应咨询自己的顾问。这些材料中表达的任何预测、估算、预报、目标、前景和/或意见均可能随时更改，恕不另行通知，且可能与其他人表达的意见不同或相反。此处或 a16z 内容分发渠道提供的任何图表仅供参考，在做出任何投资决定时不应依赖这些图表。</p><p data-pi="14">此处包含的某些信息来自第三方来源，包括 a16z 管理的基金的投资组合公司。虽然这些信息取自被认为可靠的来源，但 a16z 并未独立核实这些信息，也不对信息的持续准确性或其对于特定情况的适用性做出任何陈述。此外，posts 可能包含第三方广告；a16z 未审核此类广告，也不认可其中包含的任何广告内容。所有内容仅代表所指明日期的观点。</p><p data-pi="15">在任何情况下，本网站或相关内容分发渠道上提供的任何 posts 或其他信息均不应被理解为招揽购买或出售任何证券，或购买或出售 a16z 人员赞助、讨论或提及的任何集合投资工具中的权益的要约。也不应将其理解为提供投资咨询服务的要约；投资 a16z 管理的集合投资工具的要约将单独发出，且仅通过特定集合投资工具的机密发行文件进行——这些文件应被完整阅读，且仅面向符合联邦证券法下某些资质要求的人士发出。此类投资者，即合格投资者和合格购买人，通常被认为有能力评估预期投资和财务事项的优劣与风险。</p><p data-pi="16">无法保证 a16z 的投资目标将会实现或投资策略将会成功。投资 a16z 管理的任何工具都涉及高度风险，包括投资全部损失的风险。提及、引用或描述的任何投资或投资组合公司并不代表 a16z 管理的工具中的所有投资，且无法保证这些投资将会盈利，或未来进行的其他投资将具有类似特征或结果。a16z 管理的基金所进行的投资列表可在此查看：https://a16z.com/investments/。a16z 的投资、集合投资工具或投资策略的过往业绩不一定预示未来结果。未包含在此列表中的是发行人未允许 a16z 公开披露的投资（以及某些公开交易的加密货币/数字资产）。</p><p data-pi="17">至于其在任何加密货币或 token 项目中的投资，a16z 是出于自身的财务利益行事，不一定代表其他 token 持有者的利益。a16z 在这些项目中没有任何特殊角色，也无权管理它们。a16z 不会承诺继续以投资者和 token 持有者以外的身份参与这些项目，其他 token 持有者不应期待或依赖 a16z 会有任何特定参与。</p><p data-pi="18">对于 a16z 管理的在日本注册的基金，a16z 将根据《日本金融商品交易法》第 63 条的规定，向日本公众提供要求公开的文件副本。请联系 compliance@a16z.com 索取此类文件。</p><p data-pi="19">有关其他网站使用条款，请访问此处。有关 a16z 的更多重要信息，包括我们的 Form ADV Part 2A Brochure，可在 SEC 网站查阅：http://www.adviserinfo.sec.gov。</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="Nano Banana"># Nano Banana</button><button class="tag" data-tag="图像编辑"># 图像编辑</button><button class="tag" data-tag="视频生成"># 视频生成</button><button class="tag" data-tag="产品爆红"># 产品爆红</button><button class="tag" data-tag="Nicole Brichtova"># Nicole Brichtova</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

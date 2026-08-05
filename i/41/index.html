@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>OpenAI 首席研究官 Mark Chen：GPT-4.5 首秀、Scaling Law 与教模型学会情商 - AI 访谈库</title>
+  <meta name="description" content="GPT-4.5 上线当天，Mark Chen 谈这一最大模型的发布、Scaling Law 未死以及如何教模型情商。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/41/" />
+  <meta property="og:title" content="OpenAI 首席研究官 Mark Chen：GPT-4.5 首秀、Scaling Law 与教模型学会情商" />
+  <meta property="og:description" content="GPT-4.5 上线当天，Mark Chen 谈这一最大模型的发布、Scaling Law 未死以及如何教模型情商。" />
+  <meta property="og:image" content="https://talks.mengfansong.me/thumbs/yt-pdfI9MuxWq8.jpg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">OpenAI 首席研究官 Mark Chen：GPT-4.5 首秀、Scaling Law 与教模型学会情商</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Mark Chen · OpenAI 首席研究官</div>
+      <h1 class="r-title">OpenAI 首席研究官 Mark Chen：GPT-4.5 首秀、Scaling Law 与教模型学会情商</h1>
+      <p class="r-title-en">OpenAI&#39;s Chief Research Officer on GPT-4.5&#39;s Debut, Scaling Laws, And Teaching EQ to Models</p>
+      <div class="r-meta">2025-02-27 · Alex Kantrowitz (Big Technology Podcast) · 约 20 分钟读完 · <a class="r-src" href="https://www.youtube.com/watch?v=pdfI9MuxWq8" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">GPT-4.5 上线当天，Mark Chen 谈这一最大模型的发布、Scaling Law 未死以及如何教模型情商。</div>
+    </header>
+    <figure class="r-cover"><img src="/thumbs/yt-pdfI9MuxWq8.jpg" alt="" decoding="async" onerror="this.parentNode.remove()" /></figure>
+    <div class="r-spk-bar"><span class="r-spk-label">只看</span><button class="spk-chip on" data-spkf="Mark Chen">Mark Chen</button><button class="spk-chip on" data-spkf="主持人">主持人</button></div>
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">OpenAI 首席研究官 Mark Chen 今天做客节目，介绍 GPT-4.5 的发布。这是该公司迄今为止规模最大、性能最强的模型，将于今天发布。我们稍后将深入探讨。欢迎收听《Big Technology Podcast》，这是一档针对科技界及更广泛领域进行冷静、nuanced 对话的节目。今天我们邀请到了 OpenAI 首席研究官 Mark Chen，他将介绍公司的最新发布——GPT-4.5。是的，它终于来了，今天首次亮相。Mark，很高兴见到你，欢迎做客本节目。</p><p data-pi="1" data-spk="Mark Chen"><span class="spk">Mark Chen</span>非常感谢邀请我。</p><p data-pi="2" data-spk="主持人"><span class="spk">主持人</span>谢谢你的到来。这档节目创办四年半以来，这是我们首次采访 OpenAI，所以希望这是众多合作中的第一次。我们很感激你在这个节骨眼上率先试水，正好赶上 GPT-4.5 发布这一重大新闻。</p><p data-pi="3" data-spk="Mark Chen"><span class="spk">Mark Chen</span>是的。GPT-4.5 确实标志着我们在可预测 scaling 范式下的最新里程碑。你知道，此前符合这一范式的模型有 GPT-3、GPT-3.5、GPT-4，而现在这是最新的成果。它代表了相比上一代模型一个数量级的提升，有点像从 3.5 到 4 的跨越。</p><p data-pi="4" data-spk="主持人"><span class="spk">主持人</span>我想我们大多数听众都会问这个问题，而且我们过去几个月在节目里也问过：为什么这不是 GPT-5？要达到 GPT-5 还需要什么？</p><p data-pi="5" data-spk="Mark Chen"><span class="spk">Mark Chen</span>嗯，我认为 GPT-5……你知道，每当我们做这些命名决定时，我们都会尽量遵循趋势感。所以，再次谈到可预测 scaling，从 3 到 3.5，你可以预测出，在训练模型所用的算力方面，一个数量级的提升，再加上效率改进，能带来什么。我们发现这个模型大致符合 4.5 应有的水平，所以我们想如实命名。</p><p data-pi="6" data-spk="主持人"><span class="spk">主持人</span>好吧，但关于 GPT-5 何时到来已经有很多讨论了。如果我说的不对请纠正我，但我认为 GPT-4 到 4.5 之间的等待时间，比 GPT-3.5 到 4 之间要长。我不知道这是因为我们在 Twitter 上看到很多 OpenAI 员工在炒作接下来要发布的东西，还是说这可能是因为这毕竟是世界上最没耐心的行业、最没耐心的用户群体。但在我看来，大家对 GPT-5 的期望已经积累得相当高了。所以我很好奇，从你的角度来看，当 GPT-5 最终发布时，你觉得很难满足这些期望吗？</p><p data-pi="7" data-spk="Mark Chen"><span class="spk">Mark Chen</span>我不这么认为。一个根本原因是，现在我们有两条不同的 scaling 轴线。GPT-4.5 是我们在无监督学习这条轴线上最新的 scaling 实验，但还有推理。当你问到为什么 4 和 4.5 之间的发布间隔看起来稍长一些时，我们其实很大程度上也在专注于发展推理范式。所以，我认为我们的研究项目本质上是一个探索性研究项目。我们在研究所有可能的模型扩展途径，而在过去一年半到两年里，我们确实通过推理发现了一个新的、非常令人兴奋的范式，我们也在对其进行 scaling。所以我认为 GPT-5 可能真的会汇集很多东西。</p><p data-pi="8" data-spk="主持人"><span class="spk">主持人</span>好的。你提到在推理方面做了大量工作，我们当然已经通过 o1 看到了这一点，现在也有很多关于 DeepSeek 的讨论。而现在我们又在谈论一个更传统的、规模更大的大型语言模型 GPT-4.5。所以这里的大问题，我想也是很多人在面对这次即将发布时心中的疑问——我们本以为会是 GPT-5，不管怎样这都不重要——大问题是：当你向 AI 模型投入更多算力、更多数据和更多能源时，它们还能继续扩展吗？看起来你对这个问题已经有了答案。所以我很想听听你对 scaling wall 的看法，基于你们开发这个模型的经验，以及我们是否会撞上这堵墙，是否已经开始看到扩展带来的回报递减。</p><p data-pi="9" data-spk="Mark Chen"><span class="spk">Mark Chen</span>我对 scaling 确实有不同的 framing。说到无监督学习，你希望投入更多要素，比如算力、算法效率提升，以及更多数据。GPT-4.5 确实证明我们可以继续这一 scaling 范式，而且这个范式与推理并不对立，对吧？你需要知识作为基础来构建推理能力。模型不能盲目地从零开始学习推理。所以我们发现这两种范式是高度互补的，我们认为它们之间存在反馈循环。是的，GPT-4.5 的“聪明”方式与推理模型的“聪明”方式不同。</p></section><section class="chunk chunk-eager"><p data-pi="10" data-spk="Mark Chen">当你看今天的这个模型时，它拥有更多的世界知识。当我们把它与 GPT-4o 对比时，你会发现日常用例中人们以 60% 的优势更偏好它；在真正的生产力和知识工作方面，相比 GPT-4o 有将近 70% 的偏好率。所以人们确实对这个模型反响很好。而这种知识正是我们未来可以在推理模型中加以利用的。</p><p data-pi="11" data-spk="主持人"><span class="spk">主持人</span>那么具体有哪些例子呢？你提到了日常知识工作。你会用 GPT-4.5 来做哪些事，而且比起推理模型更偏好用它？</p><p data-pi="12" data-spk="Mark Chen"><span class="spk">Mark Chen</span>嗯，我想说的是，它和推理模型的侧写不同。使用更大的模型时，它确实需要更多时间来处理和思考查询，但它也会立即给你回应。这非常类似于 GPT-4 以前为你做的事情。而我认为，像 o1 这样的模型，你给出查询后，它可以思考好几分钟。我认为这从根本上说是不同的权衡。一种是立刻回复你、不做太多思考但给出更好答案的模型；另一种是想一会儿再给出答案的模型。我们发现，在很多领域，比如创意写作，虽然这还需要在未来一两个月里继续测试，但我们发现在创意写作等某些领域，这个模型优于推理模型。</p><p data-pi="13" data-spk="主持人"><span class="spk">主持人</span>好的，写作方面。还有其他用例吗？</p><p data-pi="14" data-spk="Mark Chen"><span class="spk">Mark Chen</span>是的，有写作。我认为还有一些编程用例。我们还发现，在某些特定的科学领域，它在展示知识量方面也更为出色。</p><p data-pi="15" data-spk="主持人"><span class="spk">主持人</span>好的，我稍后会回到 benchmark 的话题，但我想继续追问这个 scaling 问题，因为公开领域对此讨论很多，能和你这位来自 OpenAI 的人直接交流，弄清到底发生了什么，这很好。首先，大家的一个疑问是：当你达到这个规模时——你们不会透露模型的具体规模，这很公平——但它们很大，对吧？这是 OpenAI 迄今为止发布的最大模型 GPT-4.5。所以我其实很想知道，在这个规模下，增加相似的算力、相似的数据量，还能给你带来与过去相同的回报吗？还是说，增加这些资源所带来的回报已经开始递减了？</p><p data-pi="16" data-spk="Mark Chen"><span class="spk">Mark Chen</span>不，不，我们看到了相同的回报。我确实想强调 GPT-4.5……</p><p data-pi="17" data-spk="Mark Chen">GPT-4.5 是这个无监督学习范式下的下一个节点。我们在这方面非常严谨，会基于此前训练过的所有模型来预测预期性能。而这一次，我们搭建好了 scaling 机制，这个节点正处于下一个数量级的位置上。</p><p data-pi="18" data-spk="Mark Chen">那么走到这一步是什么感觉？我们之前聊过，这次的时间间隔比上次更长，其中一部分精力花在了推理上。但也有报道称，OpenAI 中途不得不多次叫停、重启，才最终让模型跑通，而且确实得攻克一些棘手的问题，才能实现你所说的这种阶跃式提升。能否谈谈整个过程？另外，你能否证实或否认我们听到的一些说法，比如不得不反复叫停、重新训练才走到今天这一步？</p><p data-pi="19" data-spk="Mark Chen">其实，我觉得这一点被归结为这款模型的特性很有意思。实际上，在开发我们所有的基础模型时，它们本质上都是实验。我认为，运行基础模型的过程中，很多时候确实需要在某个节点停下来，分析一下当前状况，然后重新启动训练。我不认为这是 GPT-4.5 独有的特点，我们在 GPT-4、O 系列模型上都做过同样的事。它们很大程度上就是实验，我们希望在运行中途介入诊断，如果需要干预，我们就应该干预。但我不认为这是我们专为 GPT-4.5 做、而其他模型不做的事情。</p></section><section class="chunk"><p data-pi="20" data-spk="Mark Chen">我们之前已经稍微聊过推理模型与传统 GPT 模型的区别，但这让我想到了 DeepSeek。我想你已经给出了一个相当有说服力的答案，说明你会在哪些场景下使用这类模型，而不是推理模型。不过 DeepSeek 还有另一点值得讨论，那就是他们让模型变得高效得多。有趣的是，之前我和你聊到，你需要数据、算力、电力，你说是的，而且还需要模型优化——这是人们常常忽视的一点。再回到 DeepSeek，他们在模型优化上，从原本需要查询整个知识库，转变为使用 mixture of experts，能够将查询路由到模型的特定部分，而不是将整个模型全部激活，这被认为是帮助他们提升效率的关键。</p><p data-pi="21" data-spk="Mark Chen">所以我想把这个问题抛给你，你不必评论他们具体做了什么，如果你愿意也可以。但我其实更好奇，OpenAI 在这方面做了哪些工作？GPT-4.5 是否也做了类似的优化？你们能否更高效地运行这些大模型？如果可以，是怎么做到的？</p><p data-pi="22" data-spk="Mark Chen">我会说，让模型高效提供推理服务的过程，在我看来与开发模型的核心能力是相对解耦的。我们看到 inference 栈上有很多工作要做，我认为这是 DeepSeek 做得非常好的地方，也是我们大力投入的方向。我们关心以低廉成本向所有用户交付这些模型，在这方面我们施加了很大压力。所以我认为这与 GPT-4 或推理模型无关，我们一直在推动以更低的成本进行 inference，而且我觉得我们做得不错。自从我们首次推出 GPT-4 以来，成本已经下降了很多个数量级。</p><p data-pi="23" data-spk="Mark Chen">那么，比如向 mixture of experts 的转型，这更多是推理模型的事，还是也可以用在 GPT 上？</p><p data-pi="24" data-spk="Mark Chen">这是一种架构层面的语言模型设计元素，我认为如今几乎所有大语言模型都采用了 mixture of experts。它带来的效率提升，既适用于 GPT-4、GPT-4.5 这样的基础模型，也同样适用于推理模型。</p><p data-pi="25" data-spk="Mark Chen">所以你们在这款模型上也用了这个技术，基本上？</p><p data-pi="26" data-spk="Mark Chen">是的，我们确实探索了 mixture of experts，以及其他一系列架构改进。</p><p data-pi="27" data-spk="Mark Chen">很好。我们有一个 Discord 群组，里面有一些 Big Technology 的听众和读者。最近有个话题特别火，很有意思，我们现在正好在聊一个极其庞大的模型，而他们在 Discord 里停不下来地讨论的是：小而专的模型才是未来。我引用一条过去几天的评论：“对我来说，未来更像是 niche 模型嵌入在工作流中，而不是这些通用型的 God 模型。”显然 OpenAI 的论调不同。我很好奇，你怎么看大模型与 niche 模型各自的优势？你认为它们是竞争关系还是互补关系？帮我们梳理一下。</p><p data-pi="28" data-spk="Mark Chen">我想强调的一点是，我们也提供小模型。我们不仅提供旗舰前沿模型，也提供 mini 模型，让你能以低得多的成本获得这些能力，或者说非常接近前沿模型的能力。我们认为这是我们全面模型组合中重要的一部分。但从根本上说，OpenAI 的使命是推动智能的前沿，这意味着我们要开发出最好的模型。我们真正的动力在于尽可能把这条边界往外推。我们认为，在智能的前沿领域，永远会有应用场景。我们认为，从 99.</p><p data-pi="29" data-spk="Mark Chen">从数学能力的第九百分位到世界顶尖水平，这种差异对我们来说意义重大。我认为，最优秀的人类科学家所能发现的东西，与你我所能发现的东西之间有着显著的不同。因此，我们的动力在于尽可能推进智能的前沿。与此同时，我们希望让这些能力对每个人来说都更便宜、更具成本效益。我们不认为细分领域模型会消失；我们希望构建这些 Foundation models，同时也研究如何随着时间的推移以可控的成本交付这些能力。这一直是我们的理念。在智能的最后那几个百分点里，总会有一些价值可挖。</p></section><section class="chunk"><p data-pi="30" data-spk="Mark Chen">没错，我们来聊聊这个，因为我们在节目中经常争论：产品和模型，到底哪个更重要？我是模型派。我们有一位周五常来的嘉宾 Ronan Roy，他是产品派。他基本上就是说，用你现在手头有的东西，把它优先做好。而我说，你大概能用更好的模型做到更多。但我得老实讲，有时候我也会词穷，不太确定从数学第99百分位提升到世界顶尖水平到底能带来什么。所以我很想知道你的答案：打造出世界上最好的模型，能做到哪些本来根本做不到的事？</p><p data-pi="31" data-spk="Mark Chen">完全同意。而且我认为这确实标志着一种转变。如果你想想，拿着现有的模型去为它们构建最好的交互界面，这肯定是你应该始终在做、始终要探索的事情。我想三年前，那看起来像是聊天，对吧，我们推出了 ChatGPT。而今天，当你把最好的模型和最强的能力结合起来看，我觉得它看起来更像是 agents。我认为 reasoning 和 agents 是紧密耦合的。当你思考是什么造就了一个好的 agent，那就是你可以坐下来放手让它自己去运作，而且你很放心它会带着你想要的结果回来。</p><p data-pi="32" data-spk="Mark Chen">而 reasoning 就是驱动它的引擎。你让模型去尝试做一件事，如果第一次没成功，它应该能够反思：为什么我没成功？更好的方法是什么？我非常认同这种思路——能力一直在变化，交互界面也随之变化，我们始终在探索当前能力下最好的交互界面应该是什么样子。不过话说回来，我站在你这边。但还是要再强调一下，模型上的这种提升到底能给你带来什么？你觉得它会实现什么？</p><p data-pi="33" data-spk="Mark Chen">是的，我认为是各种形式的 agents。比如你看 deep research 这类产品，它让你能够就任何一个你感兴趣的题目，获得一份基本成型、完整的报告。我甚至用它整理过长达一小时的演讲内容。它会去整合所有信息，进行组织，提炼出要点，让你能够做深度探索，让你几乎可以深入任何一个你感兴趣的题目。所以我觉得，现在你能获取的信息量和综合处理能力正在非常迅速地进化。</p><p data-pi="34" data-spk="Mark Chen">所以基本上，这并不是说拿着你现在已有的模型，去把 deep research 这个产品本身做得更好这么简单。我理解得对不对：你的意思是，如果你把模型做得更好，产品本身就会内在地变得更好？就拿 deep research 来说。完全正确，完全正确。除非模型在 reasoning 和基础的无监督学习层面都达到了某种能力水平，否则这种东西是不可能实现的。</p><p data-pi="35" data-spk="Mark Chen">好的。你知道吗，有个问题一直在我脑海深处，我想再跟你确认一下，以确保我理解正确。我之前的观点，可能是错的，我以为我们——或者说你们这个行业——会直接从这些大模型过渡到具备 reasoning 能力的大模型。但你实际上说的是，这里存在双轨并行。是的，是的。我认为我们始终在推动前沿，而且我想甚至从五六年前开始，主流的做法就是不断提升规模。所以我们在无监督学习上不断提升规模，在 reasoning 上也在提升规模。</p><p data-pi="36" data-spk="Mark Chen">但与此同时，你也在意提供 mini models，你在意提供具有成本效益的模型，能够以更低的成本交付能力。而对很多用例来说，这往往已经足够了。我们的使命不仅仅是推动最大、最昂贵的模型，而是既要做到这一点，同时也要拥有一系列模型组合，让人们能够以低成本将其用于各自的场景。</p><p data-pi="37" data-spk="Mark Chen">好的，那我们在结束前快速聊聊 4.5 相比 GPT-4 的升级。我很好奇，你能否从较高层面给我们过一遍，它在各项 benchmark 上相比前代模型的表现？然后我再追加一个问题。嗯，我已经读过你们的博客文章了，所以对即将发布的内容有所了解。顺便说一下，我们这次节目会在消息发布的同时放出。所以看起来你们某种程度上也在传递一个信号：没错，我们有传统的 benchmark，但我们也需要衡量这个模型在 EQ 方面的表现，而不只是纯粹的智能。所以请先告诉我们 benchmark 上的提升，然后再谈谈为什么你认为把这两者结合起来看很重要。</p><p data-pi="38" data-spk="Mark Chen">是的，我的意思是，在所有传统指标上，比如 GPQA、AIME 这些我们长期跟踪的传统 benchmark 上，这确实意味着一次量级上的飞跃，幅度堪比从 GPT-3 到 GPT-4 的跨越。</p><p data-pi="39" data-spk="Mark Chen">对于 GPT-4.5，这里还有一个有趣的侧重点，我想说更多是在 Vibe 层面的基准测试，而非传统基准。我认为这确实值得强调，因为每次我们发布模型时，都会有一个发现过程，去探索哪些有趣的用例会涌现出来。我们注意到，这实际上是一个情感智能高得多的模型。你今天晚些时候可以在博客文章中看到例子，比如它如何回应关于困难处境的询问，或者在特定困境中寻求建议时，它的回应更有情感智能。我想还有一点，你可以看到——这可能是个有点傻的例子——如果你让之前的模型为你创作 ASCII 艺术，它们大多会直接搞砸，而这个模型几乎可以完美完成。所以到处都能看到能力提升的痕迹，而且我认为像创意写作这样的事情会展示这一点。</p></section><section class="chunk"><p data-pi="40" data-spk="Mark Chen">我从你目前给出的例子中注意到的一点是，它似乎不再觉得有必要为每个回应都写一篇论文。比如有个用户说“我过得很难受”，它实际上写得简洁自然，像人类一样，而不是像传统那样——给你三段自我护理的建议你可以去做。对，对，对。而这就体现了情感智能，对吧？它不是那种“哦，我看你心情不好，这里有五种让你好起来的方法”。那种回应感觉不够接地气，也不够有同情心。而在这里，你得到的是直切要点、真正能引导用户多说一些的回应。</p><p data-pi="41" data-spk="Mark Chen">所以我觉得会有一种批评——我能预见到，我们现在就来谈谈——人们会说：好吧，OpenAI 以前谈的是传统基准测试，现在却谈情感智能，这是在转移目标，想让我们关注别的东西。你对此怎么回应？</p><p data-pi="42" data-spk="Mark Chen">嗯，我真的不认为准确的描述是它没达到我们预期的基准。所以你看从 3 到 3.5 到 4 再到 4.5 的发展，这个模型确实达到了我们预期的基准。我认为关键在于，每次你发布一个新模型，核心都在于用例的发现。而且在很多方面，GPT-4 已经非常聪明了。这有点像我们当初发布 GPT-4 的时候——我们看到它达到了所有预期的基准，但用户会对什么产生共鸣？那才是关键问题。我认为今天我们问 GPT-4.5 的也是同样的问题。我们邀请大家来看：嘿，我们做了一些早期探索，发现它更有情感智能，我们发现它是更好的创意写手，但你看到了什么？</p><p data-pi="43" data-spk="Mark Chen">是的。好了 Mark，我们在开始录制前提到过，我每次都能在 OpenAI 的发布视频里看到你。首先，很高兴能和你实时对话。另外，过去一年我们看到 OpenAI 出现了大批离职，也许媒体渲染得太过分了——可能确实是我们（媒体）在渲染——但我挺好奇在 OpenAI 内部工作是什么体验，以及你如何看待公司内部的人才储备。你几个月前刚刚升任首席研究官，而现在我们又有了一个新的基础模型，所以跟我们讲讲人才状况吧。</p><p data-pi="44" data-spk="Mark Chen">嗯，我认为它仍然是世界上最顶尖的 AI 组织。我想说，OpenAI 的人才水准与任何其他公司之间都存在明显差距。说到人员离职，你知道，AI 的格局变化很大——可能比任何其他领域变化都大。三个月前的光景和再往前三个月又不一样了。我认为在 AI 发展过程中，有些人会对如何发展 AI 有自己的主张，想按自己的方式去尝试，这是很自然的。我觉得这很健康，这也给了内部人员发光的机会。我们内部从不缺愿意挺身而出的人，我们已经多次看到这一点。我真的很喜欢我们这里的储备。</p><p data-pi="45" data-spk="Mark Chen">非常酷。好了各位，GPT-4.5 今天向 OpenAI Pro 用户推出，下周将向 Plus、Team、Enterprise 和 Edu 用户推出。Mark，很高兴见到你，再次感谢你能来。你马上还要去直播，所以我很感激你今天花时间跟我聊。非常感谢，我真的很感激你的时间。</p><p data-pi="46" data-spk="Mark Chen">也谢谢你邀请我。</p><p data-pi="47" data-spk="Mark Chen">好的，我们很快再聊。各位，我们提到了 Ronan 和我的争论，我们会在 More Everything 里深入讨论，以及我们能分享的所有关于 GPT-4 的内容。</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="GPT-4.5"># GPT-4.5</button><button class="tag" data-tag="Scaling Law"># Scaling Law</button><button class="tag" data-tag="模型情商"># 模型情商</button><button class="tag" data-tag="发布日访谈"># 发布日访谈</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>

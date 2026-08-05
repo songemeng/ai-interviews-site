@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Romain Huet：OpenAI 眼中的智能体与基础设施 - AI 访谈库</title>
+  <meta name="description" content="面向 CIO 的对谈：Codex 从编码工具变成能做文档、评审、清积压和运维的通用工作智能体，以及企业最关心的沙箱、权限与 human-in-the-loop 设计。最值得引用的一句：&#39;现在公司里人人都是 builder&#39;——他据此建议企业重排路线图，因为交付周期正从数月压到数天。" />
+  <link rel="canonical" href="https://talks.mengfansong.me/i/446/" />
+  <meta property="og:title" content="Romain Huet：OpenAI 眼中的智能体与基础设施" />
+  <meta property="og:description" content="面向 CIO 的对谈：Codex 从编码工具变成能做文档、评审、清积压和运维的通用工作智能体，以及企业最关心的沙箱、权限与 human-in-the-loop 设计。最值得引用的一句：&#39;现在公司里人人都是 builder&#39;——他据此建议企业重排路线图，因为交付周期正从数月压到数天。" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="reader-open">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-icon">🎙️</span>AI 访谈库</div>
+      <div class="search-wrap">
+        <svg viewBox="0 0 16 16" width="13" height="13"><path fill="currentColor" d="M6.5 1a5.5 5.5 0 1 0 3.44 9.79l3.63 3.64a.75.75 0 1 0 1.06-1.06l-3.64-3.63A5.5 5.5 0 0 0 6.5 1zM3 6.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>
+        <input id="search" type="search" placeholder="搜索人物、公司、话题" />
+      </div>
+    </div>
+    <div class="chips" id="chips">
+      <button class="chip active" data-media="">全部</button>
+      <button class="chip" data-media="video">🎬 视频</button>
+      <button class="chip" data-media="audio">🎧 音频</button>
+      <button class="chip" data-media="text">📄 文字</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-toggle="unwatched">👀 未看</button>
+      <button class="chip" data-toggle="hastext">✓ 有原文</button>
+      <button class="chip" data-toggle="recent">🕐 近三月</button>
+      <span class="chip-divider"></span>
+      <button class="chip" data-view="time">按时间</button>
+      <button class="chip" data-view="company">按机构</button>
+    </div>
+    <div class="persons-row" id="persons-row"></div>
+  </header>
+
+  <div class="active-filter" id="active-filter"></div>
+
+  <main id="shelves"></main>
+
+  <div class="reader-page open" id="reader">
+    <header class="r-top" id="r-top">
+      <button class="r-back" id="r-back" aria-label="返回">
+        <svg viewBox="0 0 12 20" width="11" height="18"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M10 2L3 10l7 8"/></svg>
+        <span>返回</span>
+      </button>
+      <div class="r-top-center">
+        <div class="r-top-title" id="r-top-title">Romain Huet：OpenAI 眼中的智能体与基础设施</div>
+        <div class="r-top-sub r-remain"></div>
+      </div>
+      <div class="r-controls" id="r-controls-top"></div>
+      <div class="r-progress"><i id="r-progress-bar"></i></div>
+    </header>
+    <div class="r-scroll" id="r-scroll">
+      <article class="r-article" id="r-article">
+    <header class="r-head">
+      <div class="r-kicker">Romain Huet · OpenAI 开发者体验负责人</div>
+      <h1 class="r-title">Romain Huet：OpenAI 眼中的智能体与基础设施</h1>
+      <p class="r-title-en">Romain Huet: OpenAI&#39;s View on Agents and Infrastructure</p>
+      <div class="r-meta">2026-06-08 · Ctrl Alt Lead (Tom Allen) · 25m · 约 2 分钟读完 · <a class="r-src" href="https://ctrl-alt-lead.simplecast.com/episodes/romain-huet-openai" target="_blank" rel="noopener">原文
+        <svg viewBox="0 0 12 12" width="9" height="9"><path fill="currentColor" d="M3.5 1a.75.75 0 0 0 0 1.5h4.94L1.72 9.22a.75.75 0 1 0 1.06 1.06L9.5 3.56v4.94a.75.75 0 0 0 1.5 0V1H3.5z"/></svg></a>
+      </div>
+      <div class="r-brief">面向 CIO 的对谈：Codex 从编码工具变成能做文档、评审、清积压和运维的通用工作智能体，以及企业最关心的沙箱、权限与 human-in-the-loop 设计。最值得引用的一句：&#39;现在公司里人人都是 builder&#39;——他据此建议企业重排路线图，因为交付周期正从数月压到数天。</div>
+    </header>
+    
+    
+    <div class="r-body sans" id="r-body" style="font-size:19px"><section class="chunk chunk-eager"><p data-pi="0">我们在网站上使用 cookie，以定制并增强您的用户体验，同时协助我们的营销工作。点击“Accept Cookies”，即表示您同意我们在您的设备上存储 cookie，从而增强网站导航，分析网站使用情况、性能及流量（包括用于营销目的），并提供安全保障。点击此处了解有关这些 cookie 的更多信息：[Privacy Policy](https://www.simplecast.com/privacy)</p><p data-pi="1">这些 cookie 是网站正常运作所必需的（例如设置您的隐私偏好、记住您的设置或填写表单），无法在我们的系统中关闭。</p><p data-pi="2">这些 cookie 使网站得以提供增强的功能。例如，它们允许您执行能够提升浏览体验的操作，记住您的偏好，测试不同的设计方案，并确保我们的各个网站保持统一的外观和风格；追踪并分析用户如何与我们的网站、通信内容、聊天机器人互动的趋势，同时帮助利用存储在 cookie 中的信息来维护会话数据并识别回头客。这些 cookie 还能让我们统计访问量及流量来源，从而衡量并改进网站性能。它们帮助我们了解哪些页面最受欢迎、哪些最不受欢迎，并掌握访问者在网站上的活动路径。这些 cookie 可能由我们设置，也可能由已将其服务集成到我们页面的第三方提供商设置。</p><p data-pi="3">我们和某些第三方分析、广告、社交媒体及类似公司可能会通过 cookie 收集访问者数据，用于数据分析并为您提供个性化体验；这些 cookie 也可能被上述第三方用于建立您的兴趣画像，并在其他网站上向您展示可能符合您兴趣的广告。</p><p data-pi="4">这些 cookie 为我们提供有关您如何使用网站的信息，以便我们衡量网站性能并改进为您提供的服务。您可以选择退出分析 cookie。</p></section></div>
+    <footer class="r-foot"><button class="tag" data-tag="智能体"># 智能体</button><button class="tag" data-tag="Codex"># Codex</button><button class="tag" data-tag="企业IT"># 企业IT</button><button class="tag" data-tag="安全与治理"># 安全与治理</button></footer></article>
+    </div>
+    <footer class="r-bottom" id="r-controls-bottom"></footer>
+    <div class="aa-backdrop" id="aa-backdrop" hidden></div>
+    <div class="aa-panel" id="aa-panel" hidden></div>
+  </div>
+
+  <script>window.__STATIC__ = true</script>
+  <script src="/reader-core.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
